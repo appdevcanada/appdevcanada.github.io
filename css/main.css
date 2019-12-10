@@ -146,7 +146,7 @@ a {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   transform-origin: center left;
-  width: 28rem;
+  width: 35rem;
 }
 
 .description {
@@ -171,7 +171,7 @@ a {
 }
 
 .about {
-  max-width: 28rem;
+  max-width: 35rem;
 }
 
 .picture {
@@ -199,7 +199,7 @@ a {
 }
 
 /* Responsiveness */
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 999px) {
   html {
       font-size: 14px;
   }
@@ -215,7 +215,7 @@ a {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .content {
     align-items: center;
     justify-content: space-around;
