@@ -21,13 +21,6 @@ a {
 }
 
 /* Shared */
-.wallpaper {
-  display: block;
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
 
 .wallpaper,
 .picture-shadow,
@@ -199,9 +192,25 @@ a {
 }
 
 /* Responsiveness */
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 499px) {
   html {
-      font-size: 14px;
+      font-size: 0.6rem;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+  .side {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  html {
+      font-size: 0.8rem;
   }
   .content {
     flex-direction: column;
