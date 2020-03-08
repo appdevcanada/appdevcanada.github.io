@@ -37,6 +37,7 @@ a {
   font-family: "Montserrat", "Quicksand", sans-serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .button,
@@ -69,6 +70,22 @@ a {
   vertical-align: top;
   white-space: nowrap;
   will-change: box-shadow, transform;
+}
+
+.experience {
+  display: grid;
+  grid-template-areas: "b t";
+  grid-template-columns: 20px auto;
+}
+
+.bullet {
+  grid-area: b;
+  margin-top: 4px;
+}
+
+.exper {
+  grid-area: t;
+  margin-left: 5px;
 }
 
 .social {
@@ -201,6 +218,9 @@ a {
     justify-content: center;
     align-items: center;
     padding: 5rem 3rem;
+  }
+  .experience {
+    grid-template-columns: 10px auto;
   }
   .side {
     margin-bottom: 3rem;
