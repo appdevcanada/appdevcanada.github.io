@@ -51,6 +51,17 @@
   }
 }
 
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -84,10 +95,11 @@
 .name,
 .job,
 .hr,
-.description,
+/* .description,
+.skills, */
 .contact,
 .social li {
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function: ease;
   animation-fill-mode: both;
 }
@@ -136,9 +148,10 @@
   animation-name: fillUp;
 }
 
-.description {
-  animation-name: slideUp;
-}
+/* .description,
+.skills {
+  animation-name: slideRight;
+} */
 
 .contact {
   animation-name: bounceIn;
@@ -146,7 +159,7 @@
 
 .social li {
   animation-duration: 500ms;
-  animation-name: slideUp;
+  animation-name: slideRight;
   animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
 }
 
@@ -164,9 +177,10 @@
   animation-delay: 300ms;
 }
 
-.description {
-  animation-delay: 400ms;
-}
+/* .description,
+.skills {
+  animation-delay: 300ms;
+} */
 
 .picture-image {
   animation-delay: 500ms;
