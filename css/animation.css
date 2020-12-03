@@ -1,3 +1,5 @@
+/***** keyframes *****/
+
 @keyframes bounceIn {
   from {
     opacity: 0;
@@ -85,9 +87,7 @@
 }
 
 
-
-
-/* Shared */
+/***** Shared *****/
 
 .wallpaper,
 .picture-shadow,
@@ -95,8 +95,7 @@
 .name,
 .job,
 .hr,
-/* .description,
-.skills, */
+.scene,
 .contact,
 .social li {
   animation-duration: 1.5s;
@@ -110,11 +109,12 @@
 
 .picture-shadow,
 .picture-image {
-  animation-duration: 750ms;
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
 }
 
-/* Initial state */
+
+/***** Initial state *****/
 
 .wallpaper,
 .picture-shadow,
@@ -122,7 +122,8 @@
   opacity: 0;
 }
 
-/* Animation triggers */
+
+/***** Animation triggers *****/
 
 .wallpaper.is-loaded {
   animation-name: zoomOut;
@@ -148,10 +149,9 @@
   animation-name: fillUp;
 }
 
-/* .description,
-.skills {
+.scene {
   animation-name: slideRight;
-} */
+}
 
 .contact {
   animation-name: bounceIn;
@@ -163,7 +163,8 @@
   animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
 }
 
-/* Delays */
+
+/***** Delays *****/
 
 .name {
   animation-delay: 100ms;
@@ -177,13 +178,12 @@
   animation-delay: 300ms;
 }
 
-/* .description,
-.skills {
-  animation-delay: 300ms;
-} */
+.scene {
+  animation-delay: 500ms;
+}
 
 .picture-image {
-  animation-delay: 500ms;
+  animation-delay: 800ms;
 }
 
 .picture-shadow {

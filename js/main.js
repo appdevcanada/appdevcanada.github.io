@@ -19,9 +19,8 @@ function loadImage(id, targetId) {
 }
 
 function flippage() {
-  let fliped = document.getElementById('mainpage').classList.contains('off');
-  document.getElementById('mainpage').classList.toggle('off');
-  document.getElementById('skillspage').classList.toggle('off');
+  let fliped = document.getElementById('cardface').classList.contains('is-flipped');
+  document.getElementById('cardface').classList.toggle('is-flipped');
   document.getElementById('btnFlip').textContent = `${fliped ? 'Show Skills' : 'Hide Skills'}`;
 }
 

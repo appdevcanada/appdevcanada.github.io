@@ -1,4 +1,5 @@
-/* Basic */
+/***** Basic *****/
+
 html {
   background-color: rgb(220, 220, 220);
   background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 255, 255));
@@ -27,15 +28,15 @@ label{
   color: rgb(255, 217, 0);
 }
 
-/* Shared */
+/***** Shared *****/
 
 .wallpaper,
 .picture-image {
   display: block;
+  width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  width: 100%;
 }
 
 .job,
@@ -80,13 +81,47 @@ label{
   will-change: box-shadow, transform;
 }
 
-/* Specific */
+/***** Specific *****/
+
 .wallpaper {
   background-image: url("../images/canada.jpg");
   background-position: center;
   background-size: cover;
   opacity: 0.2;
   position: fixed;
+}
+
+.scene {
+  min-height: 630px;
+  perspective: 1600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card_face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card_face-back {
+  transform: rotateY(180deg);
+}
+
+.card_face-front {
+  background: transparent;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
 }
 
 .flip {
@@ -99,6 +134,15 @@ label{
   display: grid;
   grid-template-areas: "b t";
   grid-template-columns: 20px auto;
+}
+
+p.experience:nth-last-of-type(1) {
+  display: grid;
+  grid-template-areas: "b t";
+  grid-template-columns: 20px auto;
+  border-bottom: 1px rgb(255, 217, 0) solid;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .bullet {
@@ -152,11 +196,12 @@ label{
   color: rgb(255, 217, 0);
   box-shadow: 4px 4px 14px rgb(80, 80, 80), -4px -4px 14px rgb(101, 101, 101);
   transform: scale(1.1);
+  border: 1px rgb(255, 217, 0) solid;
 }
 
 .button:active {
   box-shadow: 0 0.5rem 1rem rgba(70, 70, 70, 0.5);
-  transform: scale(0.98);
+  transform: scale(0.9);
 }
 
 .job {
@@ -195,7 +240,6 @@ label{
 
 .description {
   font-size: 1.2rem;
-  min-height: 630px;
 }
 
 .leftspc {
@@ -212,7 +256,7 @@ label{
 }
 
 .bkgt {
-  background-color: rgba(21, 21, 21, 0.6);
+  background-color: rgba(21, 21, 21, 0.8);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-color: rgb(255, 217, 0);
@@ -371,7 +415,8 @@ label{
   display: none;
 }
 
-/* Responsiveness */
+/***** Responsiveness *****/
+
 @media screen and (max-width: 499px) {
   html {
       font-size: 0.6rem;
