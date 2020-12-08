@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
   <link rel="stylesheet" type="text/css" href="css/animation.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -37,63 +37,125 @@
         <div id="cardface" class="card">
           <div id="mainpage" class="description card_face card_face-front">
             <p class="experience">
-              <i class="far fa-arrow-alt-circle-right bullet"></i><span class="exper">Highly-skilled software
+              <i class="fas fa-chevron-right fa-sm bullet"></i><span class="exper">Highly-skilled software
                 development professional bringing more than 10 years in software design, development and
                 integration. Advanced knowledge of Mobile, Application and Web programming languages.</span>
             </p>
             <p class="experience">
-              <i class="far fa-arrow-alt-circle-right bullet"></i><span class="exper">Swift (<i
+              <i class="fas fa-chevron-right fa-sm bullet"></i><span class="exper">Swift (<i
                   class="fab fa-apple fa-sm"></i>), Kotlin (<i class="fab fa-android fa-sm"></i>),
                 Xamarin (<i class="fab fa-apple fa-sm"></i>/<i class="fab fa-android fa-sm"></i>/<i
-                  class="fab fa-windows fa-sm"></i>), Java, React,
+                  class="fab fa-windows fa-sm"></i>), Java, React <i class="fab fa-react fa-sm"></i>,
                 React Native, HTML5, CSS3, JavaScript ES6, C#, C++ and Visual Basic.</span>
             </p>
             <p class="experience">
-              <i class="far fa-arrow-alt-circle-right bullet"></i><span class="exper">XCode, Android Studio,
+              <i class="fas fa-chevron-right fa-sm bullet"></i><span class="exper">XCode, Android Studio,
                 Visual Studio + Code,
                 IntelliJ, SASS, Git/Github, NodeJS, Cordova (<i class="fab fa-apple fa-sm"></i>/<i
                   class="fab fa-android fa-sm"></i>).</span>
             </p>
             <p class="experience">
-              <i class="far fa-arrow-alt-circle-right bullet"></i><span class="exper">Oracle, SQL and NoSQL
+              <i class="fas fa-chevron-right fa-sm bullet"></i><span class="exper">Oracle, SQL and NoSQL
                 Databases.</span>
             </p>
             <p class="experience">
-              <i class="far fa-arrow-alt-circle-right bullet"></i><span class="exper">User Experience Design (UX),
+              <i class="fas fa-chevron-right fa-sm bullet"></i><span class="exper">User Experience Design (UX),
                 User Interface Design (UI), Design Thinking, REST APIs, Google APIs, Object-Oriented
                 Programming, IoT (Internet of Things).</span>
             </p>
             <p class="experience">
-              <i class="far fa-arrow-alt-circle-right bullet"></i><span class="exper">Illustrator, Photoshop, Xd,
+              <i class="fas fa-chevron-right fa-sm bullet"></i><span class="exper">Illustrator, Photoshop, Xd,
                 Figma, Sketch and Whimsical.</span>
             </p>
-            <div class="projects">
-              <div class="prj-Nativet bkgt">Native Apps</div>
-              <ul class="prj-Native bkg">
-                <li class="li-app"><a class="link" href="https://github.com/appdevcanada/iOS_Passport_App"
-                    target="_blank">Passport <i class="fab fa-apple fa-lg"></i></a></li>
-                <li class="li-app"><a class="link" href="https://github.com/appdevcanada/iOS_PickAPathGame"
-                    target="_blank">Pick-a-Path Game <i class="fab fa-apple fa-lg"></i></a></li>
-                <li class="li-app"><a class="link" href="https://github.com/appdevcanada/Android_GitHub_Search_App"
-                    target="_blank">GitHub Search <i class="fab fa-android fa-lg"></i></a></li>
-                <li class="li-app"><a class="link" href="https://github.com/appdevcanada/MovieDB_App"
-                    target="_blank">The Movie DB <i class="fas fa-laptop-code"></i><i
-                      class="fab fa-android fa-lg"></i></a></li>
-              </ul>
-              <div class="prj-Webt bkgt">React (Native) | Web Apps</div>
-              <ul class="prj-Web bkg">
-                <li class="li-app"><a class="link" href="https://github.com/appdevcanada/Near-You-Restaurants-Yelp"
-                    target="_blank">Resto -
-                    Yelp <i class="fab fa-react"></i></a></li>
-                <li class="li-app"><a class="link" href="https://github.com/appdevcanada/Youtube-Video-Search"
-                    target="_blank">YouTube Search <i class="fab fa-react"></i></a></li>
-                <li class="li-app"><a class="link"
-                    href="https://appdevcanada.github.io/react-and-firebase/build/index.html" target="_blank">React &
-                    Firebase <i class="fab fa-react"></i></a></li>
-                <li class="li-app"><a class="link" href="https://appdevcanada.github.io/MovieDB_Website/"
-                    target="_blank">The
-                    Movie DB <i class="fas fa-desktop"></i></a></li>
-              </ul>
+            <div id="slideshow">
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <!-- <div class="numbertext">1 / n</div> -->
+                  <img class="slide" src="images/passport.png" alt="Passport App">
+                  <div class="text slide-app"><a class="link" href="https://github.com/appdevcanada/iOS_Passport_App"
+                      target="_blank">Passport App | <i class="fab fa-apple fa-lg"></i> Swift</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="slide" src="images/plchld.png" alt="GitHub Search App">
+                  <div class="text slide-app"><a class="link"
+                      href="https://github.com/appdevcanada/Android_GitHub_Search_App" target="_blank">GitHub Search App
+                      | <i class="fab fa-android fa-lg"></i> Kotlin</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="slide" src="images/pap.png" alt="Pick-a-Path Game App">
+                  <div class="text slide-app"><a class="link" href="https://github.com/appdevcanada/iOS_PickAPathGame"
+                      target="_blank">Pick-a-Path Game App | <i class="fab fa-apple fa-lg"></i> Swift</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="slide" src="images/resto.png" alt="Resto - Yelp App">
+                  <div class="text slide-app"><a class="link"
+                      href="https://github.com/appdevcanada/Near-You-Restaurants-Yelp" target="_blank">Resto - Yelp App
+                      | <i class="fab fa-apple fa-lg"></i><i class="fab fa-android fa-lg"></i><i
+                        class="fas fa-laptop-code"></i><i class="fab fa-react"></i>
+                      React Native</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="slide" src="images/yts.png" alt="YouTube Search App">
+                  <div class="text slide-app"><a class="link"
+                      href="https://github.com/appdevcanada/Youtube-Video-Search" target="_blank">YouTube Search App |
+                      <i class="fab fa-apple fa-lg"></i><i class="fab fa-android fa-lg"></i><i class="fab fa-react"></i>
+                      React Native</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="slide" src="images/movie.png" alt="The Movie DB">
+                  <div class="text slide-app"><a class="link" href="https://github.com/appdevcanada/MovieDB_App"
+                      target="_blank">The
+                      Movie DB | <i class="fab fa-android fa-lg"></i> Cordova</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="slide" src="images/reactlist.png" alt="React &
+                      Firebase Webapp">
+                  <div class="text slide-app"><a class="link"
+                      href="https://appdevcanada.github.io/react-and-firebase/build/index.html" target="_blank">React &
+                      Firebase Webapp | <i class="fab fa-react"></i> React</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="slide" src="images//movieweb.png" alt="The Movie DB Webapp">
+                  <div class="text slide-app"><a class="link" href="https://appdevcanada.github.io/MovieDB_Website/"
+                      target="_blank">The Movie DB Webapp | <i class="fas fa-desktop"></i> JavaScript</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="slide" src="images/pwa.png" alt="Progressive Web App">
+                  <div class="text slide-app"><a class="link" href="https://appdevcanada.github.io/Javascript-PWA/"
+                      target="_blank">Progressive Web App (PWA) | <i class="fas fa-desktop"></i> JavaScript</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="slide" src="images/pizza.png" alt="The Pizza Shop Webapp">
+                  <div class="text slide-app"><a class="link" href="https://appdevcanada.github.io/pizzashop/index.html"
+                      target="_blank">The Pizza Shop Webapp | <i class="fas fa-desktop"></i> JavaScript</a></div>
+                </div>
+
+                <a class="prev" id="prev" data-idx="-1"><i class="fas fa-chevron-left"></i></a>
+                <a class="next" id="next" data-idx="1"><i class="fas fa-chevron-right"></i></a>
+
+              </div>
+              <div style="text-align:center; margin-top: 5px;">
+                <span class="dot" data-idx="1"></span>
+                <span class="dot" data-idx="2"></span>
+                <span class="dot" data-idx="3"></span>
+                <span class="dot" data-idx="4"></span>
+                <span class="dot" data-idx="5"></span>
+                <span class="dot" data-idx="6"></span>
+                <span class="dot" data-idx="7"></span>
+                <span class="dot" data-idx="8"></span>
+                <span class="dot" data-idx="9"></span>
+                <span class="dot" data-idx="10"></span>
+              </div>
             </div>
           </div>
           <div id="skillspage" class="skills card_face card_face-back">
@@ -257,7 +319,7 @@
         </div>
       </div>
       <div class="contact">
-        <a aria-label="Send Email" class="button" href="mailto:appdevcanada@gmail.com">
+        <a aria-label="Send Email" class="button ctc" href="mailto:appdevcanada@gmail.com">
           Get in touch
         </a>
         <ul class="social">

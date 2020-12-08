@@ -2,13 +2,13 @@
 
 html {
   background-color: rgb(220, 220, 220);
-  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 255, 255));
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgba(255, 255, 255,0.1));
   color: rgb(240, 240, 240);
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.5;
+  line-height: 1.4;
   min-height: 100vh;
   min-width: 300px;
   overflow-x: hidden;
@@ -26,6 +26,10 @@ label{
   font-weight: bold;
   padding-left: 5px;
   color: rgb(255, 217, 0);
+}
+
+img {
+  vertical-align: middle;
 }
 
 /***** Shared *****/
@@ -66,8 +70,8 @@ label{
 .button {
   background-color: rgb(50, 50, 50);
   border-radius: 210569px;
-  box-shadow: 0 1rem 2rem rgba(40, 40, 40, 0.8);
   color: rgb(201, 201, 201);
+  border: 1px transparent solid;
   display: inline-block;
   font-size: 0.875rem;
   line-height: 1;
@@ -94,6 +98,7 @@ label{
 .scene {
   min-height: 630px;
   perspective: 1600px;
+  margin-bottom: 40px;
 }
 
 .card {
@@ -130,6 +135,16 @@ label{
   padding: 0.8em 1.5em;
 }
 
+.ctc {
+  color: rgb(50, 50, 50);
+  background-color: rgb(255, 217, 0);
+}
+
+.ctc:hover {
+  background-color: rgb(50, 50, 50);
+  color: rgb(255, 217, 0);
+}
+
 .experience {
   display: grid;
   grid-template-areas: "b t";
@@ -148,6 +163,7 @@ p.experience:nth-last-of-type(1) {
 .bullet {
   grid-area: b;
   margin-top: 4px;
+  justify-self: center;
 }
 
 .exper {
@@ -195,7 +211,6 @@ p.experience:nth-last-of-type(1) {
 .button:hover {
   color: rgb(255, 217, 0);
   box-shadow: 4px 4px 14px rgb(80, 80, 80), -4px -4px 14px rgb(101, 101, 101);
-  transform: scale(1.1);
   border: 1px rgb(255, 217, 0) solid;
 }
 
@@ -214,12 +229,7 @@ p.experience:nth-last-of-type(1) {
   font-size: 1rem;
 }
 
-.li-app {
-  padding-bottom: 2px;
-}
-
-.li-app:hover {
-  background-image: radial-gradient(rgb(70, 70, 70) 20%, rgb(21, 21, 21) 70%);
+.slide-app:hover {
   color: rgb(255, 217, 0);
 }
 
@@ -246,50 +256,93 @@ p.experience:nth-last-of-type(1) {
   margin-left: 5px;
 }
 
-.projects {
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 560px;
+  max-height: 220px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  max-height: 220px;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(245, 245, 245);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: rgb(240, 240, 240);
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
-  display: grid;
-  grid-template-columns: minmax(150px, 1fr) minmax(5px, 15px) minmax(150px, 1fr);
-  grid-template-areas:
-  "Nativet . Webt"
-  "Native . Web";
 }
 
-.bkgt {
-  background-color: rgba(21, 21, 21, 0.8);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-color: rgb(255, 217, 0);
-  border-bottom: 1px solid;
-  padding: 5px 0 5px;
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: rgb(240, 240, 240);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(40,40,40,0.3);
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(190, 190, 190);
+  border-radius: 210569px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.bkg {
-  background-color: rgba(21, 21, 21, 0.7);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+.active, .dot:hover {
+  background-color: rgb(255, 217, 0);
 }
 
-.prj-Nativet {
-  grid-area: Nativet;
-  color: rgb(255, 217, 0);
-}
-
-.prj-Webt {
-  grid-area: Webt;
-  color: rgb(255, 217, 0);
-}
-
-.prj-Native {
-  grid-area: Native;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-.prj-Web {
-  grid-area: Web;
-  padding-top: 5px;
-  padding-bottom: 10px;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .skills {
@@ -346,7 +399,7 @@ p.experience:nth-last-of-type(1) {
 #sktlrt,
 #sklgrt,
 #skskrt {
-  background-color: rgba(21, 21, 21, 0.7);
+  background-color: rgba(20, 20, 20, 0.7);
   height: fit-content;
 }
 
@@ -372,8 +425,6 @@ p.experience:nth-last-of-type(1) {
 .contact {
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 1.5rem;
-  vertical-align: top;
   justify-content: space-between;
 }
 
@@ -411,6 +462,7 @@ p.experience:nth-last-of-type(1) {
   margin-bottom: 0.5rem;
 }
 
+
 .off {
   display: none;
 }
@@ -419,7 +471,7 @@ p.experience:nth-last-of-type(1) {
 
 @media screen and (max-width: 499px) {
   html {
-      font-size: 0.6rem;
+    font-size: 0.6rem;
   }
   .skills {
     min-height: 380px;
@@ -430,6 +482,9 @@ p.experience:nth-last-of-type(1) {
   }
   .flip {
     width: 100px;
+  }
+  .scene {
+    min-height: 380px;
   }
   .content {
     flex-direction: column;
@@ -460,11 +515,14 @@ p.experience:nth-last-of-type(1) {
   .flip {
     width: 120px;
   }
+  .scene {
+    min-height: 500px;
+  }
   .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1.8rem;
   }
   .side {
     margin-bottom: 3rem;
@@ -474,13 +532,13 @@ p.experience:nth-last-of-type(1) {
 
 @media screen and (min-width: 800px) and (max-width: 999px) {
   html {
-      font-size: 1rem;
+    font-size: 1rem;
   }
   .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1.8rem;
   }
   .side {
     margin-bottom: 3rem;
@@ -493,7 +551,7 @@ p.experience:nth-last-of-type(1) {
     align-items: center;
     justify-content: space-around;
     justify-content: space-evenly;
-    padding: 2rem;
+    padding: 1.8rem;
   }
   .side {
     flex-grow: 0;
