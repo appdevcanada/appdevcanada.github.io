@@ -92,7 +92,7 @@
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .2}
   to {opacity: 1}
 }
 
