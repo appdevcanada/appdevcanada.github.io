@@ -462,7 +462,7 @@ p.experience:nth-last-of-type(1) {
 
 .picture-image {
   box-shadow: 4px 4px 14px rgb(80, 80, 80), -4px -4px 14px rgb(101, 101, 101);
-  border-radius: 210569px;
+  border-radius: 90px;
   position: absolute;
 }
 
