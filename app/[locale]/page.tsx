@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { FaApple } from 'react-icons/fa6';
 import { ImAndroid } from 'react-icons/im';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import { Nav } from '@/components/Nav';
 import { ContactReveal } from '@/components/ContactReveal';
 import { ContactToggleButton } from '@/components/ContactToggleButton';

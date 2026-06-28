@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Nav } from '@/components/Nav';
 import { PresenceTrackerTabs } from '@/components/PresenceTrackerTabs';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
 
 type Props = { params: Promise<{ locale: string }> };
