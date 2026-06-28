@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "learnMore": "En savoir plus"
+  },
+  "hero": {
+    "tagline": "Des applications mobiles ciblées, conçues au Canada."
+  },
+  "apps": {
+    "label": "Quelques-unes de nos applications",
+    "presencetracker": {
+      "name": "PresenceTracker",
+      "category": "Immigration · Utilitaires",
+      "desc": "PresenceTracker aide les résidents permanents et les candidats à la citoyenneté à respecter les exigences de présence physique au Canada. Enregistrez vos absences à l'étranger et l'application calcule vos jours au Canada en temps réel.",
+      "feature1": "Sans tableurs",
+      "feature2": "Sans papier",
+      "feature3": "Sans calcul manuel",
+      "feature4": "Sans perte de mémoire"
+    },
+    "learnMore": "En savoir plus",
+    "more": "D'autres applications arrivent bientôt.",
+    "comingsoon": {
+      "title": "Plus d'applications",
+      "category": "Bientôt disponible",
+      "text": "Nous développons de nouveaux outils ciblés pour des défis du monde réel.",
+      "cta": "Restez connectés"
+    }
+  },
+  "stats": {
+    "expLabel": "Ans d'expérience",
+    "countriesLabel": "Pays desservis",
+    "indieLabel": "Indépendant & autofinancé"
+  },
+  "tech": {
+    "label": "Technologies"
+  },
+  "approach": {
+    "label": "Notre approche",
+    "focused": {
+      "title": "Focalisé",
+      "desc": "Chaque application fait une chose bien. Pas de fonctionnalités superflues, pas de ventes incitatives."
+    },
+    "polished": {
+      "title": "Soigné",
+      "desc": "Les détails comptent. Nous nous soucions des petits moments qui rendent une application agréable."
+    },
+    "honest": {
+      "title": "Honnête",
+      "desc": "Pas d'abonnements, pas de traceurs. Juste des logiciels qui respectent les personnes qui les utilisent."
+    }
+  },
+  "whychoose": {
+    "label": "Pourquoi nous choisir",
+    "title": "Expertise mobile, sans les frais d'agence",
+    "text": "Nous apportons une expertise en développement mobile multiplateforme à chaque produit — construit avec la même pile technologique que les grandes entreprises, avec l'attention aux détails d'un studio boutique.\n\nPas d'agences encombrantes, pas de chefs de compte entre vous et le développeur. Vous travaillez directement avec les personnes qui construisent votre application, ce qui signifie des décisions plus rapides, des résultats plus clairs et un logiciel qui correspond vraiment à votre problème.\n\nChaque projet commence par l'écoute. Nous apprenons votre domaine, vos utilisateurs et vos contraintes avant d'écrire une seule ligne de code.",
+    "reason1Title": "Natif multiplateforme",
+    "reason1Text": "React Native et Expo nous permettent de livrer sur iOS et Android depuis une seule base de code — avec des performances et un ressenti natifs sur les deux plateformes.",
+    "reason2Title": "Confidentialité par conception",
+    "reason2Text": "Pas d'analyse, pas de synchronisation cloud, pas de suivi. Chaque application garde vos données sur votre appareil, par défaut.",
+    "reason3Title": "Local et indépendant",
+    "reason3Text": "Un petit studio canadien sans intermédiaires ni objectifs trimestriels. Chaque décision est guidée par la qualité, pas par des métriques de croissance."
+  },
+  "team": {
+    "label": "Le Studio",
+    "title": "Petite équipe. Fort focus.",
+    "text": "Application Development Canada est un petit studio mobile indépendant basé au Canada. Nous créons des outils focalisés qui résolvent de vrais problèmes — soigneusement conçus pour iOS et Android, sans superflu, sans abonnements et sans suivi.\n\nChaque décision, de l'architecture au design, est guidée par un seul objectif : un logiciel fiable qui respecte ses utilisateurs.",
+    "cta": "Contactez-nous"
+  },
+  "cta": {
+    "title": "Commençons",
+    "text": "Vous avez un problème qui nécessite une solution mobile ciblée ? Nous aimerions en entendre parler.",
+    "button": "Nous contacter"
+  },
+  "contact": {
+    "label": "Contactez-nous",
+    "title": "Envoyez-nous un message",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "Votre email",
+    "messagePlaceholder": "Parlez-nous de votre problème, projet ou question...",
+    "submit": "Envoyer le message"
+  },
+  "about": {
+    "label": "À propos",
+    "text": "Application Development Canada est un petit studio mobile indépendant basé au Canada. Nous créons des outils qui résolvent de vrais problèmes pour de vraies personnes — soigneusement conçus pour iOS et Android."
+  },
+  "footer": {
+    "copy": "© 2026 Application Development Canada",
+    "privacy": "Politique de confidentialité",
+    "support": "Assistance"
+  },
+  "privacy": {
+    "back": "← Retour",
+    "eyebrow": "PresenceTracker",
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : juin 2026",
+    "summaryLabel": "En bref :",
+    "summaryText": "PresenceTracker stocke toutes vos données localement sur votre appareil uniquement. Nous ne collectons aucune information personnelle, n'utilisons aucune analyse et n'envoyons aucune donnée à aucun serveur.",
+    "collectTitle": "Informations que nous collectons",
+    "collectText": "PresenceTracker ne collecte, ne transmet ni ne stocke aucune information personnelle sur des serveurs externes. Toutes les données que vous saisissez dans l'application — y compris les dates de voyage, les pays et les paramètres — sont stockées exclusivement dans une base de données SQLite locale sur votre appareil.",
+    "storageTitle": "Stockage des données",
+    "storageText": "Votre historique de voyages et vos préférences d'application sont stockés localement via la bibliothèque SQLite d'Expo. Ces données ne quittent jamais votre appareil sauf si vous les exportez explicitement.",
+    "storageItems": [
+      "Enregistrements de voyages (dates, destinations, durée)",
+      "Paramètres de l'application (langue, thème de couleur, date d'approbation de la RP)",
+      "Statut d'intégration complété"
+    ],
+    "storageNote": "Nous n'avons pas accès à ces données et elles ne sont pas sauvegardées sur un serveur d'Application Development Canada.",
+    "thirdPartyTitle": "Services tiers",
+    "thirdPartyText": "PresenceTracker n'utilise aucun SDK tiers d'analyse, de publicité ou de suivi. Nous ne nous intégrons à aucune plateforme sociale et ne partageons de données avec aucune partie externe.",
+    "permissionsTitle": "Autorisations de l'appareil",
+    "permissionsText": "L'application ne demande pas accès à votre caméra, microphone, contacts, localisation ou tout autre capteur de l'appareil. La seule autorisation utilisée est le stockage local pour sauvegarder vos données de voyage.",
+    "childrenTitle": "Confidentialité des enfants",
+    "childrenText": "PresenceTracker n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations auprès des enfants.",
+    "changesTitle": "Modifications de cette politique",
+    "changesText": "Si nous apportons des modifications à cette politique de confidentialité, nous mettrons à jour la date «Dernière mise à jour» ci-dessus. L'utilisation continue de l'application après les modifications constitue l'acceptation de la politique révisée.",
+    "contactTitle": "Contact",
+    "contactText": "Si vous avez des questions sur cette politique de confidentialité, vous pouvez nous contacter à"
+  }
+}

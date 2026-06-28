@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-label {
+    @apply text-[11px] font-black uppercase tracking-[0.13em] text-muted;
+  }
+
+  /* Hero gradient: three radial glows mirroring the logo cube layout */
+  .hero-gradient {
+    background:
+      radial-gradient(ellipse at 50% 15%, rgba(194, 32, 24, 0.22) 0%, transparent 55%),
+      radial-gradient(ellipse at 18% 85%, rgba(26, 138, 68, 0.18) 0%, transparent 50%),
+      radial-gradient(ellipse at 82% 85%, rgba(21, 87, 192, 0.18) 0%, transparent 50%),
+      rgb(var(--color-bg));
+  }
+  .dark .hero-gradient {
+    background:
+      radial-gradient(ellipse at 50% 15%, rgba(224, 48, 40, 0.45) 0%, transparent 55%),
+      radial-gradient(ellipse at 18% 85%, rgba(34, 168, 85, 0.35) 0%, transparent 50%),
+      radial-gradient(ellipse at 82% 85%, rgba(27, 117, 224, 0.35) 0%, transparent 50%),
+      rgb(var(--color-bg));
+  }
+
+  /* Single-color gradient cards (approach/values) */
+  .card-red   { background: linear-gradient(135deg, rgba(194,  32,  24, 0.12) 0%, rgb(var(--color-surface)) 60%); }
+  .card-green { background: linear-gradient(135deg, rgba( 26, 138,  68, 0.12) 0%, rgb(var(--color-surface)) 60%); }
+  .card-blue  { background: linear-gradient(135deg, rgba( 21,  87, 192, 0.12) 0%, rgb(var(--color-surface)) 60%); }
+  .dark .card-red   { background: linear-gradient(135deg, rgba(224,  48,  40, 0.18) 0%, rgb(var(--color-surface)) 60%); }
+  .dark .card-green { background: linear-gradient(135deg, rgba( 34, 168,  85, 0.18) 0%, rgb(var(--color-surface)) 60%); }
+  .dark .card-blue  { background: linear-gradient(135deg, rgba( 27, 117, 224, 0.18) 0%, rgb(var(--color-surface)) 60%); }
+
+  /* Tri-color gradient card (featured app) */
+  .card-gradient {
+    background:
+      radial-gradient(ellipse at 90%   5%, rgba(194,  32,  24, 0.14) 0%, transparent 45%),
+      radial-gradient(ellipse at  5%  95%, rgba( 26, 138,  68, 0.12) 0%, transparent 45%),
+      radial-gradient(ellipse at 95%  95%, rgba( 21,  87, 192, 0.12) 0%, transparent 45%),
+      rgb(var(--color-surface));
+  }
+  .dark .card-gradient {
+    background:
+      radial-gradient(ellipse at 90%   5%, rgba(224,  48,  40, 0.22) 0%, transparent 45%),
+      radial-gradient(ellipse at  5%  95%, rgba( 34, 168,  85, 0.18) 0%, transparent 45%),
+      radial-gradient(ellipse at 95%  95%, rgba( 27, 117, 224, 0.18) 0%, transparent 45%),
+      rgb(var(--color-surface));
+  }
+
+  /* Stats strip: horizontal tri-glow band */
+  .stats-strip {
+    background:
+      radial-gradient(ellipse at 15% 50%, rgba( 26, 138,  68, 0.14) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(194,  32,  24, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 85% 50%, rgba( 21,  87, 192, 0.14) 0%, transparent 50%),
+      rgb(var(--color-surface));
+    border-top:    1px solid rgb(var(--color-border));
+    border-bottom: 1px solid rgb(var(--color-border));
+  }
+  .dark .stats-strip {
+    background:
+      radial-gradient(ellipse at 15% 50%, rgba( 34, 168,  85, 0.20) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(224,  48,  40, 0.18) 0%, transparent 50%),
+      radial-gradient(ellipse at 85% 50%, rgba( 27, 117, 224, 0.20) 0%, transparent 50%),
+      rgb(var(--color-surface));
+  }
+}
+
+@layer base {
+  /* Light theme — default */
+  :root {
+    --color-bg:       244 245 250;
+    --color-surface:  255 255 255;
+    --color-surface2: 236 238 247;
+    --color-border:   214 218 240;
+    --color-accent:   194 32 24;
+    --color-text:     12 15 30;
+    --color-muted:    92 98 130;
+    --color-label:    54 61 106;
+    --color-green:    26 138 68;
+    --color-blue:     21 87 192;
+    color-scheme: light;
+  }
+
+  /* Dark theme */
+  .dark {
+    --color-bg:       7 8 15;
+    --color-surface:  13 16 32;
+    --color-surface2: 19 23 40;
+    --color-border:   26 32 64;
+    --color-accent:   224 48 40;
+    --color-text:     217 224 247;
+    --color-muted:    74 80 112;
+    --color-label:    122 132 168;
+    --color-green:    34 168 85;
+    --color-blue:     27 117 224;
+    color-scheme: dark;
+  }
+
+  html {
+    font-size: 20px;
+    background-color: rgb(var(--color-bg));
+    color: rgb(var(--color-text));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}

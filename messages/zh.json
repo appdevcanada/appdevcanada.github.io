@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "learnMore": "了解更多"
+  },
+  "hero": {
+    "tagline": "专注的移动应用，加拿大精心打造。"
+  },
+  "apps": {
+    "label": "我们的部分应用",
+    "presencetracker": {
+      "name": "PresenceTracker",
+      "category": "移民 · 工具",
+      "desc": "PresenceTracker 帮助永久居民和入籍申请人跟踪加拿大的实际居住要求。记录您在海外的离境情况，应用程序将实时计算您在加拿大的天数。",
+      "feature1": "无需电子表格",
+      "feature2": "无需纸质记录",
+      "feature3": "无需手动计算",
+      "feature4": "无记忆丢失"
+    },
+    "learnMore": "了解更多",
+    "more": "更多应用即将推出。",
+    "comingsoon": {
+      "title": "更多应用",
+      "category": "即将推出",
+      "text": "我们正在为面对现实挑战的人们打造更多专注工具。",
+      "cta": "敬请期待"
+    }
+  },
+  "stats": {
+    "expLabel": "年开发经验",
+    "countriesLabel": "服务国家",
+    "indieLabel": "独立自主运营"
+  },
+  "tech": {
+    "label": "技术栈"
+  },
+  "approach": {
+    "label": "我们的理念",
+    "focused": {
+      "title": "专注",
+      "desc": "每款应用只做一件事，做到极致。没有功能臃肿，没有追加销售。"
+    },
+    "polished": {
+      "title": "精致",
+      "desc": "细节决定成败。我们关注那些让应用使用起来感觉恰到好处的细微之处。"
+    },
+    "honest": {
+      "title": "诚实",
+      "desc": "无订阅，无追踪。只是尊重用户的软件。"
+    }
+  },
+  "whychoose": {
+    "label": "为何选择我们",
+    "title": "移动开发专业能力，无需代理机构成本",
+    "text": "我们将跨平台移动开发专业能力融入每款产品——采用与大型科技公司相同的技术栈，但具备精品工作室的细节关注。\n\n没有臃肿的代理机构，没有夹在您和开发者之间的客户经理。您直接与构建应用的人合作，这意味着更快的决策、更清晰的成果，以及真正符合您需求的软件。\n\n每个项目都从倾听开始。在编写第一行代码之前，我们会了解您的领域、用户和约束条件。",
+    "reason1Title": "跨平台原生开发",
+    "reason1Text": "React Native 和 Expo 让我们从单一代码库同时发布 iOS 和 Android——在两个平台上均具备原生性能和体验。",
+    "reason2Title": "隐私优先设计",
+    "reason2Text": "无分析工具，无云同步，无跟踪。我们的每款应用都将您的数据默认保存在您的设备上。",
+    "reason3Title": "本地独立工作室",
+    "reason3Text": "一家无中间商的小型加拿大工作室，没有季度目标。每个决策都以质量为导向，而非增长指标。"
+  },
+  "team": {
+    "label": "关于工作室",
+    "title": "小团队，强专注。",
+    "text": "Application Development Canada 是一家位于加拿大的小型独立移动工作室。我们打造专注的工具，解决真实问题——为 iOS 和 Android 精心设计，无臃肿功能、无订阅、无追踪。\n\n从架构到设计，每一个决策都由一个目标驱动：可靠运行、尊重用户的软件。",
+    "cta": "联系我们"
+  },
+  "cta": {
+    "title": "让我们开始吧",
+    "text": "有需要专注移动解决方案的问题？我们很乐意听取。",
+    "button": "联系我们"
+  },
+  "contact": {
+    "label": "联系我们",
+    "title": "发送消息",
+    "namePlaceholder": "您的姓名",
+    "emailPlaceholder": "您的电子邮件",
+    "messagePlaceholder": "告诉我们您的问题、项目或疑问...",
+    "submit": "发送消息"
+  },
+  "about": {
+    "label": "关于我们",
+    "text": "Application Development Canada 是一家位于加拿大的小型独立移动开发工作室。我们为 iOS 和 Android 精心打造解决实际问题的工具。"
+  },
+  "footer": {
+    "copy": "© 2026 Application Development Canada",
+    "privacy": "隐私政策",
+    "support": "技术支持"
+  },
+  "privacy": {
+    "back": "← 返回",
+    "eyebrow": "PresenceTracker",
+    "title": "隐私政策",
+    "updated": "最后更新：2026年6月",
+    "summaryLabel": "简短说明：",
+    "summaryText": "PresenceTracker 仅将您的所有数据存储在您的设备本地。我们不收集任何个人信息，不使用分析工具，也不向任何服务器发送数据。",
+    "collectTitle": "我们收集的信息",
+    "collectText": "PresenceTracker 不会在外部服务器上收集、传输或存储任何个人信息。您在应用中输入的所有数据——包括旅行日期、国家/地区和设置——仅存储在您设备上的本地 SQLite 数据库中。",
+    "storageTitle": "数据存储",
+    "storageText": "您的旅行记录和应用偏好设置通过 Expo 的 SQLite 库本地存储在设备上。除非您明确导出，否则这些数据不会离开您的设备。",
+    "storageItems": [
+      "旅行记录（日期、目的地、时长）",
+      "应用设置（语言、配色方案、PR审批日期）",
+      "引导完成状态"
+    ],
+    "storageNote": "我们无法访问这些数据，且这些数据不会备份到任何 Application Development Canada 服务器上。",
+    "thirdPartyTitle": "第三方服务",
+    "thirdPartyText": "PresenceTracker 不使用任何第三方分析、广告或追踪 SDK。我们不与任何社交平台集成，也不与任何外部方共享数据。",
+    "permissionsTitle": "设备权限",
+    "permissionsText": "应用不会请求访问您的摄像头、麦克风、联系人、位置或任何其他设备传感器。唯一使用的权限是本地存储，用于保存您的旅行数据。",
+    "childrenTitle": "儿童隐私",
+    "childrenText": "PresenceTracker 不针对13岁以下的儿童。我们不会有意收集儿童的任何信息。",
+    "changesTitle": "政策变更",
+    "changesText": "如果我们对本隐私政策进行更改，我们将更新上方的\"最后更新\"日期。在更改后继续使用该应用即表示接受修订后的政策。",
+    "contactTitle": "联系我们",
+    "contactText": "如果您对本隐私政策有任何疑问，请通过以下方式联系我们"
+  }
+}

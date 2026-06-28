@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "learnMore": "Learn more"
+  },
+  "hero": {
+    "tagline": "Focused mobile apps, crafted in Canada."
+  },
+  "apps": {
+    "label": "Some of Our Apps",
+    "presencetracker": {
+      "name": "PresenceTracker",
+      "category": "Immigration · Utilities",
+      "desc": "PresenceTracker helps permanent residents and citizenship applicants stay on top of Canada's physical presence requirements. Log your absences abroad and the app calculates your days in Canada in real time.",
+      "feature1": "No spreadsheets",
+      "feature2": "No paper records",
+      "feature3": "No manual counting",
+      "feature4": "No memory loss"
+    },
+    "learnMore": "Learn more",
+    "more": "More apps coming soon.",
+    "comingsoon": {
+      "title": "More Apps",
+      "category": "Coming Soon",
+      "text": "We're building more focused tools for people navigating real-world challenges. New apps in development.",
+      "cta": "Stay tuned"
+    }
+  },
+  "stats": {
+    "expLabel": "Years of Experience",
+    "countriesLabel": "Countries Served",
+    "indieLabel": "Indie & Self-Funded"
+  },
+  "tech": {
+    "label": "Technologies"
+  },
+  "approach": {
+    "label": "Our Approach",
+    "focused": {
+      "title": "Focused",
+      "desc": "Every app does one thing well. No feature bloat, no upsells."
+    },
+    "polished": {
+      "title": "Polished",
+      "desc": "Details matter. We care about the small moments that make an app feel right."
+    },
+    "honest": {
+      "title": "Honest",
+      "desc": "No subscriptions, no trackers. Just software that respects the people who use it."
+    }
+  },
+  "whychoose": {
+    "label": "Why Choose Us",
+    "title": "Mobile expertise, without the agency overhead",
+    "text": "We bring cross-platform mobile development expertise to every product we ship — built with the same stack used by major tech companies, with the attention to detail of a boutique studio.\n\nNo bloated agencies, no account managers between you and the developer. You work directly with the people building your app, which means faster decisions, cleaner results, and software that actually fits your problem.\n\nEvery project starts with listening. We learn your domain, your users, and your constraints before writing a single line of code. The result is focused, reliable software — not a feature list.",
+    "reason1Title": "Cross-Platform Native",
+    "reason1Text": "React Native and Expo let us ship to iOS and Android from a single codebase — with native performance and feel on both platforms.",
+    "reason2Title": "Privacy by Design",
+    "reason2Text": "No analytics, no cloud sync, no tracking. Every app keeps your data on your device, by default.",
+    "reason3Title": "Local & Independent",
+    "reason3Text": "A small Canadian studio with no middlemen, no quarterly targets. Every decision is driven by quality, not growth metrics."
+  },
+  "team": {
+    "label": "The Studio",
+    "title": "Small team. Strong focus.",
+    "text": "Application Development Canada is a small independent mobile studio based in Canada. We build focused tools that solve real problems for real people — carefully crafted for iOS and Android, with no bloat, no subscriptions, and no tracking.\n\nEvery decision, from architecture to design, is driven by one goal: software that works reliably and treats users with respect.",
+    "cta": "Get in touch"
+  },
+  "cta": {
+    "title": "Let's get started",
+    "text": "Have a problem that needs a focused mobile solution? We'd love to hear about it.",
+    "button": "Contact us"
+  },
+  "contact": {
+    "label": "Get in Touch",
+    "title": "Send us a message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Tell us about your problem, project or question...",
+    "submit": "Send message"
+  },
+  "about": {
+    "label": "About",
+    "text": "Application Development Canada is a small independent mobile studio based in Canada. We build tools that solve real problems for real people — carefully crafted for iOS and Android."
+  },
+  "footer": {
+    "copy": "© 2026 Application Development Canada",
+    "privacy": "Privacy Policy",
+    "support": "Support"
+  },
+  "privacy": {
+    "back": "← Back",
+    "eyebrow": "PresenceTracker",
+    "title": "Privacy Policy",
+    "updated": "Last updated: June 2026",
+    "summaryLabel": "Short version:",
+    "summaryText": "PresenceTracker stores all your data locally on your device only. We collect no personal information, use no analytics, and send no data to any server.",
+    "collectTitle": "Information we collect",
+    "collectText": "PresenceTracker does not collect, transmit, or store any personal information on external servers. All data you enter in the app — including trip dates, countries, and settings — is stored exclusively in a local SQLite database on your device.",
+    "storageTitle": "Data storage",
+    "storageText": "Your trip history and app preferences are stored locally using SQLite on-device storage via Expo's SQLite library. This data never leaves your device unless you explicitly export it.",
+    "storageItems": [
+      "Trip records (dates, destinations, duration)",
+      "App settings (language, color scheme, PR approval date)",
+      "Onboarding completion status"
+    ],
+    "storageNote": "We do not have access to this data, and it is not backed up to any Application Development Canada server.",
+    "thirdPartyTitle": "Third-party services",
+    "thirdPartyText": "PresenceTracker does not use any third-party analytics, advertising, or tracking SDKs. We do not integrate with any social platforms or share data with any external parties.",
+    "permissionsTitle": "Device permissions",
+    "permissionsText": "The app does not request access to your camera, microphone, contacts, location, or any other device sensors. The only permission used is local storage for saving your trip data.",
+    "childrenTitle": "Children's privacy",
+    "childrenText": "PresenceTracker is not directed at children under the age of 13. We do not knowingly collect any information from children.",
+    "changesTitle": "Changes to this policy",
+    "changesText": "If we make changes to this privacy policy, we will update the \"Last updated\" date above. Continued use of the app after changes constitutes acceptance of the revised policy.",
+    "contactTitle": "Contact",
+    "contactText": "If you have questions about this privacy policy, you can reach us at"
+  }
+}
