@@ -3,8 +3,6 @@ import { routing } from './i18n/routing';
 
 export default createMiddleware(routing);
 
-export const runtime = 'nodejs';
-
 export const config = {
   matcher: [
     '/((?!api|_next|_vercel|.*\\..*).*)',

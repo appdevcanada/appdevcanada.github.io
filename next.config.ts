@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: false,
   },
+  webpack: (config) => {
+    config.node = { __dirname: true, __filename: true };
+    return config;
+  },
 };
 
 export default withNextIntl(nextConfig);
