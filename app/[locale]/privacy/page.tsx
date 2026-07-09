@@ -1,11 +1,24 @@
 import { Nav } from '@/components/Nav';
 import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME, localizedAlternates } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy — App Dev Canada',
-  description: 'How App Dev Canada handles information submitted through this website.',
-};
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const pageTitle = 'Privacy Policy';
+  const description = 'How App Dev Canada handles information submitted through this website.';
+  const fullTitle = `${pageTitle} — ${SITE_NAME}`;
+
+  return {
+    title: pageTitle,
+    description,
+    alternates: localizedAlternates(locale, '/privacy'),
+    openGraph: { title: fullTitle, description, url: `${SITE_URL}/${locale}/privacy` },
+    twitter: { title: fullTitle, description },
+  };
+}
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (

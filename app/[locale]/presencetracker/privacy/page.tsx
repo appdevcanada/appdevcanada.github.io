@@ -3,15 +3,23 @@ import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { Nav } from '@/components/Nav';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME, localizedAlternates } from '@/lib/seo';
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'privacy' });
+  const pageTitle = `${t('title')} — PresenceTracker`;
+  const description = t('summaryText');
+  const fullTitle = `${pageTitle} — ${SITE_NAME}`;
+
   return {
-    title: `${t('title')} — PresenceTracker`,
-    description: t('summaryText'),
+    title: pageTitle,
+    description,
+    alternates: localizedAlternates(locale, '/presencetracker/privacy'),
+    openGraph: { title: fullTitle, description, url: `${SITE_URL}/${locale}/presencetracker/privacy` },
+    twitter: { title: fullTitle, description },
   };
 }
 

@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { FaApple } from 'react-icons/fa6';
 import { ImAndroid } from 'react-icons/im';
@@ -8,13 +7,13 @@ import { Nav } from '@/components/Nav';
 import { ContactReveal } from '@/components/ContactReveal';
 import { ContactToggleButton } from '@/components/ContactToggleButton';
 import type { Metadata } from 'next';
+import { localizedAlternates } from '@/lib/seo';
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'hero' });
-  return { title: 'App Dev Canada', description: t('tagline') };
+  return { alternates: localizedAlternates(locale, '') };
 }
 
 /* ─── Hero ─────────────────────────────────────────────────────────────── */

@@ -3,15 +3,23 @@ import { Nav } from '@/components/Nav';
 import { PresenceTrackerTabs } from '@/components/PresenceTrackerTabs';
 import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME, localizedAlternates } from '@/lib/seo';
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'apps.presencetracker' });
+  const pageTitle = t('name');
+  const description = t('desc');
+  const fullTitle = `${pageTitle} — ${SITE_NAME}`;
+
   return {
-    title: `${t('name')} — App Dev Canada`,
-    description: t('desc'),
+    title: pageTitle,
+    description,
+    alternates: localizedAlternates(locale, '/presencetracker_details'),
+    openGraph: { title: fullTitle, description, url: `${SITE_URL}/${locale}/presencetracker_details` },
+    twitter: { title: fullTitle, description },
   };
 }
 
