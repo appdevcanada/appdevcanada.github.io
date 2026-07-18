@@ -3,12 +3,11 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { APP_STORE_URL } from '@/lib/presencetracker-links';
 
 const TECH_CHIPS = [
   'React Native', 'Expo', 'TypeScript', 'iOS', 'Android', 'SQLite', 'NativeWind',
 ];
-
-const APP_STORE_URL = 'https://apps.apple.com/us/app/presencetracker/id6787793972';
 
 function StoreLinks() {
   const t = useTranslations('apps.presencetracker');
