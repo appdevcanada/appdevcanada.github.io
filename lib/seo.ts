@@ -1,6 +1,6 @@
 import { routing } from '@/i18n/routing';
 
-export const SITE_URL = 'https://appdevcanada.ca';
+export const SITE_URL = 'https://www.appdevcanada.ca';
 export const SITE_NAME = 'App Dev Canada';
 
 const OG_LOCALES: Record<string, string> = {
