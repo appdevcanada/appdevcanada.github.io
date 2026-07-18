@@ -165,9 +165,9 @@ function AppsSection() {
         >
           <div className="flex items-start justify-between mb-4">
             <Image src="/images/presencetracker-icon.svg" alt="PresenceTracker icon" width={72} height={72} unoptimized className="rounded-[14px]" />
-            <span className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-surface border border-border text-white" aria-label="Available on iOS and Android">
+            <span className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-surface border border-border text-white" aria-label="Available on iOS · Android coming soon">
               <FaApple size={18} aria-hidden="true" />
-              <ImAndroid size={18} aria-hidden="true" />
+              <ImAndroid size={18} className="opacity-40" aria-hidden="true" />
             </span>
           </div>
           <h3 className="font-bold text-copy text-base leading-tight">{t('presencetracker.name')}</h3>

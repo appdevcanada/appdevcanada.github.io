@@ -14,7 +14,9 @@
       "feature1": "无需电子表格",
       "feature2": "无需纸质记录",
       "feature3": "无需手动计算",
-      "feature4": "无记忆丢失"
+      "feature4": "无记忆丢失",
+      "appStore": "在 App Store 下载",
+      "googlePlaySoon": "Google Play — 即将上线"
     },
     "learnMore": "了解更多",
     "more": "更多应用即将推出。",

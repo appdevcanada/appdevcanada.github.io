@@ -10,6 +10,32 @@ const TECH_CHIPS = [
   'React Native', 'Expo', 'TypeScript', 'iOS', 'Android', 'SQLite', 'NativeWind',
 ];
 
+const APP_STORE_URL = 'https://apps.apple.com/us/app/presencetracker/id6787793972';
+
+function StoreLinks() {
+  const t = useTranslations('apps.presencetracker');
+  return (
+    <div className="flex flex-wrap gap-3">
+      <a
+        href={APP_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-copy text-bg font-semibold text-[13.5px] hover:opacity-90 transition-opacity duration-150"
+      >
+        <FaApple size={18} aria-hidden="true" />
+        {t('appStore')}
+      </a>
+      <span
+        aria-disabled="true"
+        className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface border border-border text-muted font-semibold text-[13.5px] cursor-not-allowed"
+      >
+        <ImAndroid size={18} aria-hidden="true" />
+        {t('googlePlaySoon')}
+      </span>
+    </div>
+  );
+}
+
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="py-8 border-t border-border">
@@ -39,12 +65,11 @@ function AboutTab() {
         <div>
           <h2 className="text-copy text-xl font-bold">{t('name')}</h2>
           <p className="text-[11px] uppercase tracking-wider font-semibold text-muted mt-1">{t('category')}</p>
-          <span className="inline-flex items-center gap-2 mt-2 text-white/70">
-            <FaApple size={16} aria-hidden="true" />
-            <ImAndroid size={16} aria-hidden="true" />
-          </span>
         </div>
       </div>
+
+      {/* Store links */}
+      <StoreLinks />
 
       {/* Description */}
       <p className="text-label text-[14.5px] leading-relaxed">{t('desc')}</p>
