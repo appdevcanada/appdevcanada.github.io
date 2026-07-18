@@ -22,10 +22,10 @@ function StoreLinks() {
         className="inline-block hover:opacity-90 transition-opacity duration-150"
       >
         <Image
-          src="/images/app-store-badge.png"
+          src="/images/app-store-badge.svg"
           alt={t('appStore')}
-          width={295}
-          height={88}
+          width={135}
+          height={40}
           unoptimized
           className="h-11 w-auto"
         />
