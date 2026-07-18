@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { FaApple } from 'react-icons/fa6';
 import { ImAndroid } from 'react-icons/im';
 
 const TECH_CHIPS = [
@@ -15,19 +14,25 @@ const APP_STORE_URL = 'https://apps.apple.com/us/app/presencetracker/id678779397
 function StoreLinks() {
   const t = useTranslations('apps.presencetracker');
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap items-center gap-3">
       <a
         href={APP_STORE_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-copy text-bg font-semibold text-[13.5px] hover:opacity-90 transition-opacity duration-150"
+        className="inline-block hover:opacity-90 transition-opacity duration-150"
       >
-        <FaApple size={18} aria-hidden="true" />
-        {t('appStore')}
+        <Image
+          src="/images/app-store-badge.png"
+          alt={t('appStore')}
+          width={295}
+          height={88}
+          unoptimized
+          className="h-11 w-auto"
+        />
       </a>
       <span
         aria-disabled="true"
-        className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface border border-border text-muted font-semibold text-[13.5px] cursor-not-allowed"
+        className="inline-flex items-center gap-2.5 h-11 px-4 rounded-xl bg-surface border border-border text-muted font-semibold text-[13.5px] cursor-not-allowed"
       >
         <ImAndroid size={18} aria-hidden="true" />
         {t('googlePlaySoon')}
@@ -84,7 +89,7 @@ function AboutTab() {
       </div>
 
       {/* Tech stack */}
-      <div className="border-t border-border pt-6">
+      <div className="border-t border-border pt-6 pb-6">
         <p className="section-label mb-4">Technologies</p>
         <div className="flex flex-wrap gap-2">
           {TECH_CHIPS.map((chip) => (
