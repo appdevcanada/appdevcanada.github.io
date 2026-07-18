@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { ImAndroid } from 'react-icons/im';
 
 const TECH_CHIPS = [
   'React Native', 'Expo', 'TypeScript', 'iOS', 'Android', 'SQLite', 'NativeWind',
@@ -27,15 +26,22 @@ function StoreLinks() {
           width={135}
           height={40}
           unoptimized
-          className="h-11 w-auto"
+          className="h-10 w-auto"
         />
       </a>
       <span
         aria-disabled="true"
-        className="inline-flex items-center gap-2.5 h-11 px-4 rounded-xl bg-surface border border-border text-muted font-semibold text-[13.5px] cursor-not-allowed"
+        aria-label={t('googlePlaySoon')}
+        className="inline-block opacity-50 cursor-not-allowed"
       >
-        <ImAndroid size={18} aria-hidden="true" />
-        {t('googlePlaySoon')}
+        <Image
+          src="/images/google-play-badge.svg"
+          alt={t('googlePlaySoon')}
+          width={180}
+          height={53.333}
+          unoptimized
+          className="h-10 w-auto"
+        />
       </span>
     </div>
   );
