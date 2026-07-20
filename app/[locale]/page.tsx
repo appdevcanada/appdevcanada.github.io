@@ -161,7 +161,6 @@ function AppsSection() {
         <Link
           href="/presencetracker_details"
           className="group flex flex-col card-gradient border border-border rounded-2xl p-6 hover:border-accent/35 transition-colors duration-150"
-          aria-label={`${t('presencetracker.name')} — learn more`}
         >
           <div className="flex items-start justify-between mb-4">
             <Image src="/images/presencetracker-icon.svg" alt="PresenceTracker icon" width={72} height={72} unoptimized className="rounded-[14px]" />
@@ -262,7 +261,7 @@ function SiteFooter() {
           </a>
         </nav>
       </div>
-      <p className="text-[11px] text-muted/60">
+      <p className="text-[11px] text-muted">
         Images by{' '}
         <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-muted transition-colors duration-150">Freepik</a>
         {' '}and{' '}

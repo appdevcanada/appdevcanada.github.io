@@ -49,7 +49,7 @@ export function LangSwitcher() {
         className="
           inline-flex items-center gap-1.5 px-2.5 h-8 rounded-lg
           text-xs font-bold tracking-wide
-          text-accent bg-accent/10 border border-accent/20
+          text-accent dark:text-[rgb(230,80,72)] bg-accent/10 border border-accent/20
           hover:bg-accent/18 hover:border-accent/35
           transition-colors duration-150
         "
