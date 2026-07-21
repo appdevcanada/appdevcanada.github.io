@@ -16,7 +16,13 @@
       "feature3": "Sem contagem manual",
       "feature4": "Sem perda de memória",
       "appStore": "Baixar na App Store",
-      "googlePlaySoon": "Google Play — Em breve"
+      "googlePlaySoon": "Google Play — Em breve",
+      "explainer": {
+        "title": "Presença física, explicada",
+        "p1": "Para se tornar cidadão canadense, os residentes permanentes geralmente precisam ter estado fisicamente presentes no Canadá por pelo menos 1.095 dias (3 anos) dentro dos 5 anos imediatamente anteriores à solicitação. Os residentes permanentes também precisam cumprir uma obrigação de residência separada — pelo menos 730 dias (2 anos) de presença física dentro de qualquer período de 5 anos — seja renovando o cartão de residente permanente ou solicitando um novo.",
+        "p2": "Ambas as contagens consideram apenas o tempo realmente passado dentro do Canadá — cada viagem ao exterior, mesmo curta, reduz o total. Fazer esse controle manualmente ao longo de anos de viagens é exatamente o tipo de trabalho tedioso e propenso a erros que o PresenceTracker foi criado para eliminar: registre suas viagens uma vez, e o aplicativo mantém uma contagem precisa e atualizada dos seus dias de presença física para solicitações de cidadania ou residência permanente. Uma próxima atualização adicionará exportação em PDF e CSV, para que você possa imprimir seus dados ou gerenciá-los fora do aplicativo.",
+        "p3": "Isso não é aconselhamento jurídico — confirme sempre sua situação específica com o IRCC ou um profissional de imigração — mas é o número que todo solicitante precisa acertar."
+      }
     },
     "learnMore": "Saiba mais",
     "more": "Mais aplicativos em breve.",

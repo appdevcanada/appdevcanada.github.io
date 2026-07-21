@@ -16,7 +16,13 @@
       "feature3": "Sans calcul manuel",
       "feature4": "Sans perte de mémoire",
       "appStore": "Télécharger sur l'App Store",
-      "googlePlaySoon": "Google Play — Bientôt disponible"
+      "googlePlaySoon": "Google Play — Bientôt disponible",
+      "explainer": {
+        "title": "La présence physique, expliquée",
+        "p1": "Pour devenir citoyen canadien, les résidents permanents doivent généralement avoir été physiquement présents au Canada pendant au moins 1 095 jours (3 ans) au cours des 5 années précédant leur demande. Les résidents permanents doivent aussi respecter une obligation de résidence distincte — au moins 730 jours (2 ans) de présence physique au cours de toute période de 5 ans — qu'il s'agisse de renouveler leur carte de RP ou d'en demander une nouvelle.",
+        "p2": "Ces deux calculs ne tiennent compte que du temps réellement passé au Canada — chaque voyage à l'étranger, même court, réduit le total. Faire ce suivi à la main sur plusieurs années de déplacements est exactement le genre de comptabilité fastidieuse et source d'erreurs que PresenceTracker a été conçu pour éliminer : enregistrez vos voyages une fois, et l'application maintient un décompte précis et à jour de vos jours de présence physique pour vos démarches de citoyenneté ou de résidence permanente. Une prochaine mise à jour ajoutera l'exportation en PDF et CSV, pour imprimer vos données ou les gérer en dehors de l'application.",
+        "p3": "Ceci ne constitue pas un avis juridique — confirmez toujours votre situation auprès d'IRCC ou d'un professionnel de l'immigration — mais c'est le chiffre que chaque demandeur doit maîtriser."
+      }
     },
     "learnMore": "En savoir plus",
     "more": "D'autres applications arrivent bientôt.",

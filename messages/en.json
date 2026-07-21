@@ -16,7 +16,13 @@
       "feature3": "No manual counting",
       "feature4": "No memory loss",
       "appStore": "Download on the App Store",
-      "googlePlaySoon": "Google Play — Coming soon"
+      "googlePlaySoon": "Google Play — Coming soon",
+      "explainer": {
+        "title": "Physical presence, explained",
+        "p1": "To become a Canadian citizen, permanent residents generally need to have been physically present in Canada for at least 1,095 days (3 years) within the 5 years immediately before applying. Permanent residents also need to meet a separate residency obligation — at least 730 days (2 years) of physical presence within any 5-year period — whether they're renewing their PR card or applying for a new one.",
+        "p2": "Both counts only look at time actually spent inside Canada — every trip abroad, even a short one, subtracts from the total. Tracking this by hand across years of travel is exactly the kind of tedious, error-prone bookkeeping PresenceTracker was built to remove: log your trips once, and it keeps a running, accurate count of your physical presence days for citizenship or PR applications. A coming update adds PDF and CSV export, so you can print your data or manage it outside the app.",
+        "p3": "This isn't legal advice — always confirm your specific situation with IRCC or an immigration professional — but it's the number every applicant needs to get right."
+      }
     },
     "learnMore": "Learn more",
     "more": "More apps coming soon.",

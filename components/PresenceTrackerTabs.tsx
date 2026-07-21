@@ -93,6 +93,13 @@ function AboutTab() {
         ))}
       </div>
 
+      {/* Physical presence explainer */}
+      <Section title={t('explainer.title')}>
+        <p>{t('explainer.p1')}</p>
+        <p>{t('explainer.p2')}</p>
+        <p>{t('explainer.p3')}</p>
+      </Section>
+
       {/* Tech stack */}
       <div className="border-t border-border pt-6 pb-6">
         <p className="section-label mb-4">Technologies</p>
