@@ -94,7 +94,7 @@ function AboutTab() {
       </div>
 
       {/* Physical presence explainer */}
-      <div className="pt-8 border-t border-border">
+      <div className="pt-6 border-t border-border">
         <p className="section-label mb-3">{t('explainer.title')}</p>
         <div className="space-y-3 text-[14px] text-label leading-relaxed">
           <p>{t('explainer.p1')}</p>
