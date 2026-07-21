@@ -94,11 +94,14 @@ function AboutTab() {
       </div>
 
       {/* Physical presence explainer */}
-      <Section title={t('explainer.title')}>
-        <p>{t('explainer.p1')}</p>
-        <p>{t('explainer.p2')}</p>
-        <p>{t('explainer.p3')}</p>
-      </Section>
+      <div className="pt-8 border-t border-border">
+        <p className="section-label mb-3">{t('explainer.title')}</p>
+        <div className="space-y-3 text-[14px] text-label leading-relaxed">
+          <p>{t('explainer.p1')}</p>
+          <p>{t('explainer.p2')}</p>
+          <p>{t('explainer.p3')}</p>
+        </div>
+      </div>
 
       {/* Tech stack */}
       <div className="border-t border-border pt-6 pb-6">
