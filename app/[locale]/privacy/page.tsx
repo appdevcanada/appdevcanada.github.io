@@ -1,7 +1,7 @@
 import { Nav } from '@/components/Nav';
 import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
-import { SITE_URL, SITE_NAME, localizedAlternates } from '@/lib/seo';
+import { SITE_URL, SITE_NAME } from '@/lib/seo';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -14,7 +14,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: pageTitle,
     description,
-    alternates: localizedAlternates(locale, '/privacy'),
+    // Content is English-only at every locale — canonicalize to one URL instead of
+    // self-referencing per locale, which told Google 5 identical pages were all canonical.
+    alternates: { canonical: `${SITE_URL}/en/privacy` },
     openGraph: { title: fullTitle, description, url: `${SITE_URL}/${locale}/privacy` },
     twitter: { title: fullTitle, description },
   };

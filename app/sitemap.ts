@@ -2,17 +2,17 @@ import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { SITE_URL } from '@/lib/seo';
 
-const PATHS: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
+// Localized paths: same content translated at every locale, one sitemap entry each.
+const LOCALIZED_PATHS: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
   { path: '', priority: 1, changeFrequency: 'weekly' },
   { path: '/presencetracker_details', priority: 0.7, changeFrequency: 'monthly' },
-  { path: '/privacy', priority: 0.3, changeFrequency: 'yearly' },
   { path: '/presencetracker/privacy', priority: 0.3, changeFrequency: 'yearly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
-  return PATHS.flatMap(({ path, priority, changeFrequency }) =>
+  const localized = LOCALIZED_PATHS.flatMap(({ path, priority, changeFrequency }) =>
     routing.locales.map((locale) => ({
       url: `${SITE_URL}/${locale}${path}`,
       lastModified,
@@ -25,4 +25,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     }))
   );
+
+  // English-only content — a single canonical entry, no locale variants.
+  const privacy = {
+    url: `${SITE_URL}/en/privacy`,
+    lastModified,
+    changeFrequency: 'yearly' as const,
+    priority: 0.3,
+  };
+
+  return [...localized, privacy];
 }
