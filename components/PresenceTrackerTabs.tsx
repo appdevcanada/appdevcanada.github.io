@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { APP_STORE_URL } from '@/lib/presencetracker-links';
+import { APP_STORE_URL, GOOGLE_PLAY_URL } from '@/lib/presencetracker-links';
 
 const TECH_CHIPS = [
   'React Native', 'Expo', 'TypeScript', 'iOS', 'Android', 'SQLite', 'NativeWind',
@@ -28,20 +28,21 @@ function StoreLinks() {
           className="h-10 w-auto"
         />
       </a>
-      <span
-        aria-disabled="true"
-        aria-label={t('googlePlaySoon')}
-        className="inline-block opacity-50 cursor-not-allowed"
+      <a
+        href={GOOGLE_PLAY_URL ?? undefined}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block hover:opacity-90 transition-opacity duration-150"
       >
         <Image
           src="/images/google-play-badge.svg"
-          alt={t('googlePlaySoon')}
+          alt={t('googlePlay')}
           width={180}
           height={53.333}
           unoptimized
           className="h-10 w-auto"
         />
-      </span>
+      </a>
     </div>
   );
 }

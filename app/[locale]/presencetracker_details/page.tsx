@@ -34,12 +34,11 @@ export default async function PresenceTrackerDetailsPage({ params }: Props) {
     name: t('name'),
     description: t('desc'),
     applicationCategory: 'UtilitiesApplication',
-    // Update once GOOGLE_PLAY_URL is set — reflect only platforms actually downloadable today.
     operatingSystem: GOOGLE_PLAY_URL ? 'iOS, Android' : 'iOS',
     url: `${SITE_URL}/${locale}/presencetracker_details`,
     image: `${SITE_URL}/images/presencetracker-icon.png`,
     author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    downloadUrl: APP_STORE_URL,
+    downloadUrl: GOOGLE_PLAY_URL ? [APP_STORE_URL, GOOGLE_PLAY_URL] : APP_STORE_URL,
   };
 
   return (
