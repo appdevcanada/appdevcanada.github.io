@@ -8,21 +8,100 @@
   "apps": {
     "label": "Some of Our Apps",
     "presencetracker": {
-      "name": "PresenceTracker",
-      "category": "Immigration · Utilities",
-      "desc": "PresenceTracker helps permanent residents and citizenship applicants stay on top of Canada's physical presence requirements. Log your absences abroad and the app calculates your days in Canada in real time.",
+      "name": "Presence Tracker",
+      "category": "Immigration · Productivity",
+      "desc": "Presence Tracker helps permanent residents and citizenship applicants stay on top of Canada's physical presence requirements. Log your absences abroad and the app calculates your days in Canada in real time.",
+      "positioning": "Most day-counters count days. Presence Tracker counts the days IRCC actually credits you.",
       "feature1": "No spreadsheets",
       "feature2": "No paper records",
       "feature3": "No manual counting",
       "feature4": "No memory loss",
       "appStore": "Download on the App Store",
       "googlePlay": "Get it on Google Play",
+      "tabAbout": "About",
+      "irccRule": "IRCC Rule",
+      "irccCitizenshipUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/eligibility.html",
+      "irccPrUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants/pr-card/understand-pr-status.html",
       "explainer": {
         "title": "Physical presence, explained",
-        "p1": "To become a Canadian citizen, permanent residents generally need to have been physically present in Canada for at least 1,095 days (3 years) within the 5 years immediately before applying. Permanent residents also need to meet a separate residency obligation — at least 730 days (2 years) of physical presence within any 5-year period — whether they're renewing their PR card or applying for a new one.",
-        "p2": "Both counts only look at time actually spent inside Canada — every trip abroad, even a short one, subtracts from the total. Tracking this by hand across years of travel is exactly the kind of tedious, error-prone bookkeeping PresenceTracker was built to remove: log your trips once, and it keeps a running, accurate count of your physical presence days for citizenship or PR applications. A coming update adds PDF and CSV export, so you can print your data or manage it outside the app.",
-        "p3": "This isn't legal advice — always confirm your specific situation with IRCC or an immigration professional — but it's the number every applicant needs to get right."
-      }
+        "p1": "To become a Canadian citizen, permanent residents generally need to have been physically present in Canada for at least 1,095 days (3 years) <citCit>{ircc}</citCit> within the 5 years immediately before applying. Permanent residents also need to meet a separate residency obligation — at least 730 days (2 years) of physical presence within any 5-year period <citPr>{ircc}</citPr> — whether they're renewing their PR card or applying for a new one.",
+        "p2": "Both counts only look at time actually spent inside Canada — every trip abroad, even a short one, subtracts from the total. Tracking this by hand across years of travel is exactly the kind of tedious, error-prone bookkeeping Presence Tracker was built to remove: log your trips once, and it keeps a running, accurate count of your physical presence days for citizenship or PR applications. Presence Tracker includes PDF and CSV export, so you can print your data or manage it outside the app.",
+        "p3": "This is not legal advice — always confirm your specific situation with IRCC or an immigration professional — but it's the number every applicant needs to get right."
+      },
+      "whatsNew": {
+        "label": "What's new",
+        "kickerLabel": "Version 1.1",
+        "kickerTitle": "Your whole immigration timeline",
+        "kickerText": "Presence Tracker now understands not just where you were, but what status you held while you were there — and it speaks five languages.",
+        "statusHistoryTitle": "Immigration status history",
+        "statusHistoryText": "Record every period of status you've held — visitor, student, work permit, permanent resident — with the half-day pre-PR credit applied automatically, capped at 365 days. Unrecorded stretches are flagged.",
+        "backupTitle": "Backup and restore",
+        "backupText": "Save everything to a single file and bring it back on a new phone. Your data has never left your device; now it doesn't have to be trapped there either.",
+        "visitor": "Visitor",
+        "student": "Student",
+        "workPermit": "Work permit",
+        "permanentResident": "Permanent resident",
+        "cards": [
+          { "title": "Calendar view", "desc": "Every day you spent outside Canada, laid out month by month and marked with the reason for the trip." },
+          { "title": "Export for your application", "desc": "A PDF report or CSV file covering your full travel and status history, with eligibility dates included — ready to attach to a PR renewal or citizenship application." },
+          { "title": "Five languages", "desc": "English, French, Spanish, Portuguese and Simplified Chinese — the entire app, down to the FAQ, privacy policy and terms of use." }
+        ]
+      },
+      "features": {
+        "label": "Everything it does",
+        "categories": [
+          {
+            "title": "Understanding your position",
+            "items": [
+              "Real-time progress toward both requirements: 730 days for PR, 1,095 for citizenship",
+              "Rolling five-year window, recalculated automatically as time passes",
+              "Days in Canada broken down year by year",
+              "Projected eligibility dates — the earliest you could qualify, and when you will at your current pace",
+              "Half-day credit for pre-PR time, applied automatically and capped at 365 days",
+              "Gap detection: days with no recorded status are flagged rather than silently counted"
+            ]
+          },
+          {
+            "title": "Logging travel",
+            "items": [
+              "Country and reason for every trip",
+              "Multi-leg itineraries through more than one country",
+              "Edit or delete any trip with a swipe",
+              "Trips that age past the five-year window are marked as no longer counting",
+              "Departure and return days counted as days in Canada, matching IRCC's calculator"
+            ]
+          },
+          {
+            "title": "Staying ahead of deadlines",
+            "items": [
+              "A reminder before your PR card expires",
+              "A reminder the day you reach your citizenship day count",
+              "Scheduled on your device — no push server involved"
+            ]
+          },
+          {
+            "title": "Your data, your device",
+            "items": [
+              "Works entirely offline; no account, no sign-in",
+              "No ads, no tracking, no analytics, no data collection of any kind",
+              "PDF and CSV export, and a single-file backup you control",
+              "Light, dark and system themes"
+            ]
+          }
+        ]
+      },
+      "trust": {
+        "label": "Your data, your device",
+        "title": "Your travel history never leaves your phone.",
+        "text": "Presence Tracker has no account system, no servers, and no analytics. It makes no network requests at all. Everything you enter is stored in a database on your device, and the only way data leaves is when you export it yourself. Both the App Store and Google Play list this app as collecting no data."
+      },
+      "pricing": {
+        "label": "One-time payment",
+        "headline": "Pay once. No subscription.",
+        "note": "Every feature above is included — nothing locked behind a monthly plan.",
+        "cta": "Start Tracking Now"
+      },
+      "disclaimer": "Presence Tracker is an independent app. It is not affiliated with, endorsed by, or representing the Government of Canada or Immigration, Refugees and Citizenship Canada (IRCC). It provides estimates for informational purposes only and does not constitute legal or immigration advice. Always verify current requirements at canada.ca and consult a qualified immigration lawyer or regulated consultant for advice specific to your situation."
     },
     "learnMore": "Learn more",
     "more": "More apps coming soon.",
@@ -76,7 +155,7 @@
   "cta": {
     "title": "Let's get started",
     "text": "Have a problem that needs a focused mobile solution? We'd love to hear about it.",
-    "button": "Contact us"
+    "button": "Contact Us"
   },
   "contact": {
     "label": "Get in Touch",
@@ -97,30 +176,88 @@
   },
   "privacy": {
     "back": "← Back",
-    "eyebrow": "PresenceTracker",
+    "eyebrow": "Presence Tracker",
     "title": "Privacy Policy",
-    "updated": "Last updated: June 2026",
+    "updated": "Last updated: August 2026",
     "summaryLabel": "Short version:",
-    "summaryText": "PresenceTracker stores all your data locally on your device only. We collect no personal information, use no analytics, and send no data to any server.",
-    "collectTitle": "Information we collect",
-    "collectText": "PresenceTracker does not collect, transmit, or store any personal information on external servers. All data you enter in the app — including trip dates, countries, and settings — is stored exclusively in a local SQLite database on your device.",
-    "storageTitle": "Data storage",
-    "storageText": "Your trip history and app preferences are stored locally using SQLite on-device storage via Expo's SQLite library. This data never leaves your device unless you explicitly export it.",
-    "storageItems": [
-      "Trip records (dates, destinations, duration)",
-      "App settings (language, color scheme, PR approval date)",
-      "Onboarding completion status"
-    ],
-    "storageNote": "We do not have access to this data, and it is not backed up to any Application Development Canada server.",
-    "thirdPartyTitle": "Third-party services",
-    "thirdPartyText": "PresenceTracker does not use any third-party analytics, advertising, or tracking SDKs. We do not integrate with any social platforms or share data with any external parties.",
-    "permissionsTitle": "Device permissions",
-    "permissionsText": "The app does not request access to your camera, microphone, contacts, location, or any other device sensors. The only permission used is local storage for saving your trip data.",
-    "childrenTitle": "Children's privacy",
-    "childrenText": "PresenceTracker is not directed at children under the age of 13. We do not knowingly collect any information from children.",
-    "changesTitle": "Changes to this policy",
-    "changesText": "If we make changes to this privacy policy, we will update the \"Last updated\" date above. Continued use of the app after changes constitutes acceptance of the revised policy.",
-    "contactTitle": "Contact",
-    "contactText": "If you have questions about this privacy policy, you can reach us at"
+    "summaryText": "Presence Tracker stores all your data locally on your device only. We do not collect any personal data, use no analytics, and the app never connects to our servers.",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "paragraphs": [
+          "At Application Development Canada (\"we\", \"us\", or \"our\"), Company Number 76826 5175, we value your privacy. This Privacy Policy describes our privacy practices for the Presence Tracker mobile application (the \"App\").",
+          "This Policy applies to the Presence Tracker mobile application and related services provided by Application Development Canada."
+        ]
+      },
+      {
+        "title": "2. We do not collect your data",
+        "paragraphs": [
+          "Presence Tracker is designed to operate entirely on your device. We do not collect, transmit, store, or process any personal data from you or your device.",
+          "Specifically:"
+        ],
+        "items": [
+          "All trip information you enter (travel dates, destinations, reasons for travel) is stored exclusively in local storage on your device.",
+          "We do not have access to your trip data, nor can we view, retrieve, modify, or delete it.",
+          "We do not collect crash reports, analytics, usage statistics, or any device information.",
+          "We do not use third-party analytics SDKs, tracking pixels, or advertising identifiers.",
+          "The App does not connect to our servers or transmit any data to us."
+        ],
+        "closing": "Because we do not collect any personal data, many data privacy regulations (including GDPR, PIPEDA, CCPA/CPRA, LGPD, and others) do not impose data controller obligations on us regarding user data. However, we maintain this Policy for transparency and to inform you of your rights regarding data stored on your own device."
+      },
+      {
+        "title": "3. Children's privacy",
+        "paragraphs": [
+          "Because we do not collect any data, there is no risk of us inadvertently collecting information from children. The App's age restrictions are governed by our Terms of Use."
+        ]
+      },
+      {
+        "title": "4. Your rights and your device data",
+        "paragraphs": [
+          "Although we do not hold your data, you retain full control over the trip information stored locally on your device. You may:"
+        ],
+        "items": [
+          "Export, modify, or delete your data directly within the App settings.",
+          "Delete all data by removing the App from your device.",
+          "Back up your data using the App's own backup export, or your device's backup (for example iCloud)."
+        ],
+        "closing": "We cannot assist with data recovery, export, or deletion because we have no access to your device or its contents."
+      },
+      {
+        "title": "5. Security",
+        "paragraphs": [
+          "Because your data never leaves your device, its security depends entirely on your device's own protections. We strongly recommend:"
+        ],
+        "items": [
+          "Keeping your device and operating system up to date.",
+          "Using a device passcode, Face ID, or Touch ID.",
+          "Enabling device encryption if available."
+        ],
+        "closing": "Backup files you export from the App are unencrypted and readable by any app or person you share them with. Store and share them with the same care you would give any other document containing your travel history."
+      },
+      {
+        "title": "6. Third-party services",
+        "paragraphs": [
+          "This Policy does not apply to third-party websites, products, or services accessed through links within the App. Those sites operate independently and have their own privacy practices."
+        ]
+      },
+      {
+        "title": "7. Changes",
+        "paragraphs": [
+          "We may update this Policy from time to time. If we make material changes, we will post an updated version within the App. Your continued use of the App after changes are posted constitutes your acceptance of the revised Policy."
+        ]
+      },
+      {
+        "title": "8. Language",
+        "paragraphs": [
+          "This Policy is drafted in English. Any translation is provided for your convenience only. In the event of any inconsistency between the English version and a translation, the English version governs, except where applicable law requires otherwise."
+        ]
+      },
+      {
+        "title": "9. Contact us",
+        "paragraphs": [
+          "If you have any questions about this Privacy Policy, contact us at:"
+        ]
+      }
+    ]
   }
 }

@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { Nav } from '@/components/Nav';
+import { PrivacyPolicyBody } from '@/components/PrivacyPolicyBody';
 import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME, localizedAlternates } from '@/lib/seo';
 
@@ -10,7 +11,7 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'privacy' });
-  const pageTitle = `${t('title')} — PresenceTracker`;
+  const pageTitle = t('title');
   const description = t('summaryText');
   const fullTitle = `${pageTitle} — ${SITE_NAME}`;
 
@@ -38,77 +39,20 @@ function PageHero() {
   );
 }
 
-/* ─── Section block ─────────────────────────────────────────────────────── */
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div className="py-8 border-t border-border">
-      <p className="section-label mb-3">{title}</p>
-      <div className="space-y-3 text-[14px] text-label leading-relaxed">{children}</div>
-    </div>
-  );
-}
-
 /* ─── Content ───────────────────────────────────────────────────────────── */
 function PrivacyContent() {
   const t = useTranslations('privacy');
-  const storageItems = t.raw('storageItems') as string[];
 
   return (
     <main className="max-w-3xl mx-auto px-6 pb-20">
-
-      {/* Summary — tri-gradient card */}
-      <div className="card-gradient border border-border rounded-2xl px-6 py-5 my-8 text-[14px] text-label leading-relaxed">
-        <strong className="text-copy font-semibold">{t('summaryLabel')}</strong>{' '}
-        {t('summaryText')}
+      <div className="pt-8">
+        <PrivacyPolicyBody />
       </div>
-
-      <Section title={t('collectTitle')}>
-        <p>{t('collectText')}</p>
-      </Section>
-
-      <Section title={t('storageTitle')}>
-        <p>{t('storageText')}</p>
-        <ul className="mt-3 space-y-1">
-          {storageItems.map((item) => (
-            <li key={item} className="flex gap-3">
-              <span className="text-muted mt-0.5 flex-shrink-0">—</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-3">{t('storageNote')}</p>
-      </Section>
-
-      <Section title={t('thirdPartyTitle')}>
-        <p>{t('thirdPartyText')}</p>
-      </Section>
-
-      <Section title={t('permissionsTitle')}>
-        <p>{t('permissionsText')}</p>
-      </Section>
-
-      <Section title={t('childrenTitle')}>
-        <p>{t('childrenText')}</p>
-      </Section>
-
-      <Section title={t('changesTitle')}>
-        <p>{t('changesText')}</p>
-      </Section>
-
-      <Section title={t('contactTitle')}>
-        <p>
-          {t('contactText')}{' '}
-          <a href="mailto:contact@appdevcanada.ca" className="text-accent hover:underline">
-            contact@appdevcanada.ca
-          </a>
-          .
-        </p>
-      </Section>
 
       <div className="pt-8 border-t border-border">
         <Link
           href="/"
-          className="text-[13px] text-muted hover:text-label transition-colors duration-150"
+          className="text-[13px] text-copy font-semibold hover:text-label transition-colors duration-150"
         >
           {t('back')}
         </Link>

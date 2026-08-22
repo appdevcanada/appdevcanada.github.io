@@ -26,6 +26,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
+          'var(--font-nunito)',
           'system-ui',
           '-apple-system',
           'BlinkMacSystemFont',

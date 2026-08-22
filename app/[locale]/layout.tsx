@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Nunito } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -6,6 +7,8 @@ import { routing } from '@/i18n/routing';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { SITE_URL, SITE_NAME, ogLocale } from '@/lib/seo';
 import '@/app/globals.css';
+
+const nunito = Nunito({ subsets: ['latin'], variable: '--font-nunito', display: 'swap' });
 
 type Props = {
   children: React.ReactNode;
@@ -76,7 +79,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="dark" suppressHydrationWarning>
+    <html lang={locale} className={`dark ${nunito.variable}`} suppressHydrationWarning>
       <head>
         {/* Remove dark class only if user previously chose light */}
         <script

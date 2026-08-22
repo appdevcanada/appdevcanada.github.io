@@ -8,21 +8,100 @@
   "apps": {
     "label": "Algunas de nuestras aplicaciones",
     "presencetracker": {
-      "name": "PresenceTracker",
-      "category": "Inmigración · Utilidades",
-      "desc": "PresenceTracker ayuda a los residentes permanentes y solicitantes de ciudadanía a cumplir los requisitos de presencia física en Canadá. Registra tus ausencias en el extranjero y la aplicación calcula tus días en Canadá en tiempo real.",
+      "name": "Presence Tracker",
+      "category": "Inmigración · Productividad",
+      "desc": "Presence Tracker ayuda a los residentes permanentes y solicitantes de ciudadanía a cumplir los requisitos de presencia física en Canadá. Registra tus ausencias en el extranjero y la aplicación calcula tus días en Canadá en tiempo real.",
+      "positioning": "La mayoría de las calculadoras solo cuentan días. Presence Tracker cuenta los días que el IRCC realmente te acredita.",
       "feature1": "Sin hojas de cálculo",
       "feature2": "Sin papel",
       "feature3": "Sin conteo manual",
       "feature4": "Sin pérdida de memoria",
       "appStore": "Descargar en App Store",
       "googlePlay": "Disponible en Google Play",
+      "tabAbout": "Acerca de",
+      "irccRule": "Regla del IRCC",
+      "irccCitizenshipUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/eligibility.html",
+      "irccPrUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants/pr-card/understand-pr-status.html",
       "explainer": {
         "title": "La presencia física, explicada",
-        "p1": "Para convertirse en ciudadano canadiense, los residentes permanentes generalmente deben haber estado físicamente presentes en Canadá durante al menos 1,095 días (3 años) dentro de los 5 años inmediatamente anteriores a la solicitud. Los residentes permanentes también deben cumplir una obligación de residencia distinta — al menos 730 días (2 años) de presencia física dentro de cualquier período de 5 años — ya sea al renovar su tarjeta de residente permanente o al solicitar una nueva.",
-        "p2": "Ambos conteos solo consideran el tiempo realmente pasado dentro de Canadá — cada viaje al extranjero, incluso uno corto, resta del total. Llevar este registro a mano durante años de viajes es exactamente el tipo de contabilidad tediosa y propensa a errores que PresenceTracker fue creado para eliminar: registra tus viajes una vez, y la aplicación mantiene un conteo preciso y actualizado de tus días de presencia física para solicitudes de ciudadanía o residencia permanente. Una próxima actualización añadirá exportación en PDF y CSV, para que puedas imprimir tus datos o gestionarlos fuera de la aplicación.",
+        "p1": "Para convertirse en ciudadano canadiense, los residentes permanentes generalmente deben haber estado físicamente presentes en Canadá durante al menos 1,095 días (3 años) <citCit>{ircc}</citCit> dentro de los 5 años inmediatamente anteriores a la solicitud. Los residentes permanentes también deben cumplir una obligación de residencia distinta — al menos 730 días (2 años) de presencia física dentro de cualquier período de 5 años <citPr>{ircc}</citPr> — ya sea al renovar su tarjeta de residente permanente o al solicitar una nueva.",
+        "p2": "Ambos conteos solo consideran el tiempo realmente pasado dentro de Canadá — cada viaje al extranjero, incluso uno corto, resta del total. Llevar este registro a mano durante años de viajes es exactamente el tipo de contabilidad tediosa y propensa a errores que Presence Tracker fue creado para eliminar: registra tus viajes una vez, y la aplicación mantiene un conteo preciso y actualizado de tus días de presencia física para solicitudes de ciudadanía o residencia permanente. Presence Tracker incluye exportación en PDF y CSV, para que puedas imprimir tus datos o gestionarlos fuera de la aplicación.",
         "p3": "Esto no es asesoría legal — confirma siempre tu situación específica con IRCC o un profesional de inmigración — pero es el número que todo solicitante necesita tener claro."
-      }
+      },
+      "whatsNew": {
+        "label": "Novedades",
+        "kickerLabel": "Versión 1.1",
+        "kickerTitle": "Tu historial migratorio completo",
+        "kickerText": "Presence Tracker ahora entiende no solo dónde estuviste, sino también qué estatus tenías mientras estabas allí — y habla cinco idiomas.",
+        "statusHistoryTitle": "Historial de estatus migratorio",
+        "statusHistoryText": "Registra cada período de estatus que has tenido: visitante, estudiante, permiso de trabajo, residente permanente. Presence Tracker aplica las reglas del IRCC por ti, incluido el crédito de medio día por el tiempo anterior a tu residencia permanente (hasta 365 días). Los días sin estatus registrado se marcan, para que tu total nunca sea incorrecto sin que lo sepas.",
+        "backupTitle": "Respaldo y restauración",
+        "backupText": "Guarda todo en un solo archivo y recupéralo en un teléfono nuevo. Tus datos nunca han salido de tu dispositivo; ahora tampoco tienen que quedar atrapados en él.",
+        "visitor": "Visitante",
+        "student": "Estudiante",
+        "workPermit": "Permiso de trabajo",
+        "permanentResident": "Residente permanente",
+        "cards": [
+          { "title": "Vista de calendario", "desc": "Cada día que pasaste fuera de Canadá, mes a mes y marcado con el motivo del viaje." },
+          { "title": "Exportación para tu solicitud", "desc": "Un informe PDF o un archivo CSV con todo tu historial de viajes y estatus, incluidas las fechas de elegibilidad, listo para adjuntar a una renovación de tarjeta PR o a una solicitud de ciudadanía." },
+          { "title": "Cinco idiomas", "desc": "Compatibilidad completa con español, inglés, francés, portugués y chino simplificado: toda la aplicación, hasta las preguntas frecuentes, la política de privacidad y los términos de uso." }
+        ]
+      },
+      "features": {
+        "label": "Todo lo que hace",
+        "categories": [
+          {
+            "title": "Ve exactamente dónde estás",
+            "items": [
+              "Progreso en tiempo real hacia ambos requisitos: 730 días para la RP, 1,095 para la ciudadanía",
+              "Ventana móvil de cinco años, recalculada automáticamente con el paso del tiempo",
+              "Días en Canadá, desglosados año por año",
+              "Fechas de elegibilidad previstas — lo antes posible, y según tu ritmo actual",
+              "Crédito de medio día por el tiempo previo a la RP, aplicado automáticamente y limitado a 365 días",
+              "Detección de vacíos: los días sin estatus registrado se marcan en lugar de contarse silenciosamente"
+            ]
+          },
+          {
+            "title": "Registra un viaje en segundos",
+            "items": [
+              "País y motivo de cada viaje",
+              "Itinerarios con varios tramos, por más de un país",
+              "Edita o elimina cualquier viaje con un deslizamiento",
+              "Los viajes que quedan fuera de la ventana de cinco años se marcan como ya no computables",
+              "Los días de salida y regreso cuentan como días en Canadá, igual que la calculadora del IRCC"
+            ]
+          },
+          {
+            "title": "No te pierdas ninguna fecha límite",
+            "items": [
+              "Un recordatorio antes de que venza tu tarjeta PR",
+              "Un recordatorio el día en que alcanzas tus días para la ciudadanía",
+              "Programados en tu dispositivo, sin servidor de notificaciones"
+            ]
+          },
+          {
+            "title": "Tus datos, tu dispositivo",
+            "items": [
+              "Funciona completamente sin conexión; sin cuenta, sin inicio de sesión",
+              "Sin anuncios, sin seguimiento, sin análisis, sin ningún tipo de recopilación de datos",
+              "Exportación en PDF y CSV, además de una copia de seguridad en un solo archivo que tú controlas",
+              "Temas claro, oscuro y automático"
+            ]
+          }
+        ]
+      },
+      "trust": {
+        "label": "Tus datos, tu dispositivo",
+        "title": "Tu historial de viajes nunca sale de tu teléfono.",
+        "text": "Presence Tracker no tiene sistema de cuentas, ni servidores, ni análisis. La aplicación no realiza ninguna solicitud de red. Todo lo que ingresas se almacena en una base de datos en tu dispositivo, y la única forma en que los datos salen es cuando tú mismo los exportas. Tanto la App Store como Google Play indican que esta aplicación no recopila ningún dato."
+      },
+      "pricing": {
+        "label": "Pago único",
+        "headline": "Paga una vez. Sin suscripción.",
+        "note": "Todas las funciones anteriores están incluidas — nada queda bloqueado detrás de un plan mensual.",
+        "cta": "Empieza a rastrear ahora"
+      },
+      "disclaimer": "Presence Tracker no está afiliada, respaldada ni representa al Gobierno de Canadá ni a Immigration, Refugees and Citizenship Canada (IRCC). Esta aplicación ofrece estimaciones con fines informativos únicamente y no constituye asesoramiento legal ni migratorio. Verifica siempre los requisitos en canada.ca y consulta a un abogado o consultor de inmigración regulado para obtener asesoramiento específico para tu situación."
     },
     "learnMore": "Saber más",
     "more": "Más aplicaciones próximamente.",
@@ -97,30 +176,88 @@
   },
   "privacy": {
     "back": "← Atrás",
-    "eyebrow": "PresenceTracker",
+    "eyebrow": "Presence Tracker",
     "title": "Política de privacidad",
-    "updated": "Última actualización: junio de 2026",
+    "updated": "Última actualización: agosto de 2026",
     "summaryLabel": "Versión corta:",
-    "summaryText": "PresenceTracker almacena todos tus datos localmente en tu dispositivo únicamente. No recopilamos información personal, no usamos análisis y no enviamos datos a ningún servidor.",
-    "collectTitle": "Información que recopilamos",
-    "collectText": "PresenceTracker no recopila, transmite ni almacena ninguna información personal en servidores externos. Todos los datos que ingresas en la aplicación — incluidas fechas de viaje, países y configuraciones — se almacenan exclusivamente en una base de datos SQLite local en tu dispositivo.",
-    "storageTitle": "Almacenamiento de datos",
-    "storageText": "Tu historial de viajes y preferencias de la aplicación se almacenan localmente usando el almacenamiento SQLite en el dispositivo a través de la biblioteca SQLite de Expo. Estos datos nunca abandonan tu dispositivo a menos que los exportes explícitamente.",
-    "storageItems": [
-      "Registros de viajes (fechas, destinos, duración)",
-      "Configuración de la aplicación (idioma, esquema de colores, fecha de aprobación PR)",
-      "Estado de incorporación completado"
-    ],
-    "storageNote": "No tenemos acceso a estos datos y no se respaldan en ningún servidor de Application Development Canada.",
-    "thirdPartyTitle": "Servicios de terceros",
-    "thirdPartyText": "PresenceTracker no utiliza ningún SDK de análisis, publicidad o seguimiento de terceros. No nos integramos con ninguna plataforma social ni compartimos datos con ninguna parte externa.",
-    "permissionsTitle": "Permisos del dispositivo",
-    "permissionsText": "La aplicación no solicita acceso a tu cámara, micrófono, contactos, ubicación ni ningún otro sensor del dispositivo. El único permiso utilizado es el almacenamiento local para guardar tus datos de viaje.",
-    "childrenTitle": "Privacidad de los niños",
-    "childrenText": "PresenceTracker no está dirigido a niños menores de 13 años. No recopilamos conscientemente información de niños.",
-    "changesTitle": "Cambios en esta política",
-    "changesText": "Si realizamos cambios en esta política de privacidad, actualizaremos la fecha de \"Última actualización\" anterior. El uso continuo de la aplicación después de los cambios constituye la aceptación de la política revisada.",
-    "contactTitle": "Contacto",
-    "contactText": "Si tienes preguntas sobre esta política de privacidad, puedes contactarnos en"
+    "summaryText": "Presence Tracker almacena todos tus datos localmente en tu dispositivo únicamente. No recopilamos ningún dato personal, no usamos análisis, y la aplicación nunca se conecta a nuestros servidores.",
+    "sections": [
+      {
+        "title": "1. Introducción",
+        "paragraphs": [
+          "En Application Development Canada («nosotros», «nuestro» o «la Empresa»), número de empresa 76826 5175, valoramos su privacidad. La presente Política de privacidad describe nuestras prácticas en materia de privacidad con respecto a la aplicación móvil Presence Tracker (la «Aplicación»).",
+          "La presente Política se aplica a la Aplicación y a los servicios relacionados proporcionados por Application Development Canada."
+        ]
+      },
+      {
+        "title": "2. No recopilamos ningún dato",
+        "paragraphs": [
+          "Presence Tracker está diseñada para funcionar completamente en su dispositivo. No recopilamos, transmitimos, almacenamos ni procesamos ningún dato personal suyo ni de su dispositivo.",
+          "Específicamente:"
+        ],
+        "items": [
+          "Toda la información de viajes que usted introduce (fechas, destinos y motivos) se almacena exclusivamente en la memoria local de su dispositivo.",
+          "No tenemos acceso a esos datos, ni la capacidad de consultarlos, modificarlos, recuperarlos o eliminarlos.",
+          "No recopilamos informes de fallos, estadísticas de uso, datos analíticos ni información del dispositivo.",
+          "No utilizamos software de análisis de terceros, píxeles de seguimiento ni identificadores publicitarios.",
+          "La Aplicación no se conecta a nuestros servidores ni transmite ningún dato."
+        ],
+        "closing": "Dado que no recopilamos ningún dato personal, muchas regulaciones de protección de datos (incluido el RGPD, la LPRPDE, la CCPA/CPRA, la LGPD y otras) no nos imponen obligaciones de responsable del tratamiento respecto a los datos de los usuarios. No obstante, mantenemos la presente Política por transparencia y para informarle de sus derechos con respecto a los datos almacenados en su propio dispositivo."
+      },
+      {
+        "title": "3. Privacidad de los menores",
+        "paragraphs": [
+          "Dado que no recopilamos ningún dato, no existe riesgo de que recopilemos involuntariamente información de menores. Las restricciones de edad de la Aplicación se rigen por nuestros Términos de uso."
+        ]
+      },
+      {
+        "title": "4. Sus derechos y sus datos locales",
+        "paragraphs": [
+          "Aunque no conservamos sus datos, usted mantiene el control total sobre la información de viajes almacenada localmente en su dispositivo. Usted puede:"
+        ],
+        "items": [
+          "Exportar, modificar o eliminar sus datos directamente en los ajustes de la Aplicación.",
+          "Eliminar todos los datos desinstalando la Aplicación de su dispositivo.",
+          "Hacer una copia de seguridad de sus datos mediante la función de exportación de la Aplicación, o la copia de seguridad de su dispositivo (por ejemplo, iCloud)."
+        ],
+        "closing": "No podemos ayudarle con la recuperación, exportación o eliminación de datos, ya que no tenemos acceso a su dispositivo ni a su contenido."
+      },
+      {
+        "title": "5. Seguridad",
+        "paragraphs": [
+          "Dado que sus datos nunca abandonan su dispositivo, su seguridad depende enteramente de las protecciones del propio dispositivo. Le recomendamos encarecidamente:"
+        ],
+        "items": [
+          "Mantener su dispositivo y su sistema operativo actualizados.",
+          "Utilizar un código de acceso, Face ID o Touch ID.",
+          "Activar el cifrado del dispositivo, si está disponible."
+        ],
+        "closing": "Los archivos de copia de seguridad que exporte desde la Aplicación no están cifrados y pueden ser leídos por cualquier aplicación o persona con la que los comparta. Consérvelos y compártalos con el mismo cuidado que cualquier otro documento que contenga su historial de viajes."
+      },
+      {
+        "title": "6. Servicios de terceros",
+        "paragraphs": [
+          "La presente Política no se aplica a sitios web, productos o servicios de terceros a los que se acceda mediante enlaces dentro de la Aplicación. Esos sitios funcionan de forma independiente y tienen sus propias prácticas de privacidad."
+        ]
+      },
+      {
+        "title": "7. Modificaciones",
+        "paragraphs": [
+          "Podemos actualizar la presente Política de vez en cuando. Si realizamos cambios sustanciales, publicaremos una versión actualizada dentro de la Aplicación. Su uso continuado de la Aplicación después de la publicación de los cambios constituye su aceptación de la Política revisada."
+        ]
+      },
+      {
+        "title": "8. Idioma",
+        "paragraphs": [
+          "La presente Política está redactada en inglés. Cualquier traducción se proporciona únicamente por conveniencia. En caso de discrepancia entre la versión en inglés y una traducción, prevalecerá la versión en inglés, salvo cuando la ley aplicable exija lo contrario."
+        ]
+      },
+      {
+        "title": "9. Contacto",
+        "paragraphs": [
+          "Si tiene alguna pregunta sobre la presente Política de privacidad, contáctenos en:"
+        ]
+      }
+    ]
   }
 }

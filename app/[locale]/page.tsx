@@ -2,8 +2,10 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { FaApple } from 'react-icons/fa6';
 import { ImAndroid } from 'react-icons/im';
+import { HiOutlineViewfinderCircle, HiOutlineSparkles, HiOutlineCheckBadge } from 'react-icons/hi2';
 import { Link } from '@/i18n/navigation';
 import { Nav } from '@/components/Nav';
+import { SiteFooter } from '@/components/SiteFooter';
 import { ContactReveal } from '@/components/ContactReveal';
 import { ContactToggleButton } from '@/components/ContactToggleButton';
 import type { Metadata } from 'next';
@@ -75,17 +77,17 @@ function StatsStrip() {
 function ApproachSection() {
   const t = useTranslations('approach');
   const cards = [
-    { key: 'focused',  num: '01', numClass: 'text-accent',      card: 'card-red   border border-accent/25' },
-    { key: 'polished', num: '02', numClass: 'text-brand-green', card: 'card-green border border-brand-green/25' },
-    { key: 'honest',   num: '03', numClass: 'text-brand-blue',  card: 'card-blue  border border-brand-blue/25' },
+    { key: 'focused',  icon: HiOutlineViewfinderCircle, numClass: 'text-accent',      card: 'card-red   border border-accent/25' },
+    { key: 'polished', icon: HiOutlineSparkles,          numClass: 'text-brand-green', card: 'card-green border border-brand-green/25' },
+    { key: 'honest',   icon: HiOutlineCheckBadge,        numClass: 'text-brand-blue',  card: 'card-blue  border border-brand-blue/25' },
   ];
   return (
     <section className="pt-10 pb-4" aria-labelledby="approach-label">
       <p id="approach-label" className="section-label">{t('label')}</p>
       <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {cards.map(({ key, num, numClass, card }) => (
+        {cards.map(({ key, icon: Icon, numClass, card }) => (
           <div key={key} className={`rounded-2xl p-5 ${card}`}>
-            <p className={`text-2xl font-black mb-3 ${numClass}`}>{num}</p>
+            <Icon className={`w-7 h-7 mb-3 ${numClass}`} />
             <p className="font-semibold text-copy text-sm mb-1">
               {t(`${key}.title` as `focused.title` | `polished.title` | `honest.title`)}
             </p>
@@ -245,33 +247,6 @@ function StudioSection() {
   );
 }
 
-/* ─── Footer ────────────────────────────────────────────────────────────── */
-function SiteFooter() {
-  const t = useTranslations('footer');
-  return (
-    <footer className="flex flex-col gap-3 pt-6 pb-10 border-t border-border">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-        <span className="text-muted text-[12.5px]">{t('copy')}</span>
-        <nav className="flex gap-5" aria-label="Footer links">
-          <Link href="/privacy" className="text-[12.5px] text-muted hover:text-label transition-colors duration-150">
-            {t('privacy')}
-          </Link>
-          <a href="mailto:support@appdevcanada.ca" className="text-[12.5px] text-muted hover:text-label transition-colors duration-150">
-            {t('support')}
-          </a>
-        </nav>
-      </div>
-      <p className="text-[11px] text-muted">
-        Images by{' '}
-        <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-muted transition-colors duration-150">Freepik</a>
-        {' '}and{' '}
-        <a href="https://www.rawpixel.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-muted transition-colors duration-150">Rawpixel</a>
-        {' '}— Magnific.com
-      </p>
-    </footer>
-  );
-}
-
 /* ─── Page ──────────────────────────────────────────────────────────────── */
 export default function HomePage() {
   return (
@@ -289,7 +264,17 @@ export default function HomePage() {
         <CtaStrip />
         <div className="max-w-3xl mx-auto px-6">
           <ContactReveal />
-          <SiteFooter />
+          <SiteFooter
+            attribution={
+              <>
+                Images by{' '}
+                <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-muted transition-colors duration-150">Freepik</a>
+                {' '}and{' '}
+                <a href="https://www.rawpixel.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-muted transition-colors duration-150">Rawpixel</a>
+                {' '}— Magnific.com
+              </>
+            }
+          />
         </div>
       </main>
     </>

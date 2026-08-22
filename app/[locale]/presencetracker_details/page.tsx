@@ -1,6 +1,8 @@
 import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 import { Nav } from '@/components/Nav';
-import { PresenceTrackerTabs } from '@/components/PresenceTrackerTabs';
+import { PresenceTrackerTabs, StoreLinks } from '@/components/PresenceTrackerTabs';
+import { SiteFooter } from '@/components/SiteFooter';
 import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME, localizedAlternates } from '@/lib/seo';
@@ -33,7 +35,7 @@ export default async function PresenceTrackerDetailsPage({ params }: Props) {
     '@type': 'SoftwareApplication',
     name: t('name'),
     description: t('desc'),
-    applicationCategory: 'UtilitiesApplication',
+    applicationCategory: 'ProductivityApplication',
     operatingSystem: GOOGLE_PLAY_URL ? 'iOS, Android' : 'iOS',
     url: `${SITE_URL}/${locale}/presencetracker_details`,
     image: `${SITE_URL}/images/presencetracker-icon.png`,
@@ -50,18 +52,29 @@ export default async function PresenceTrackerDetailsPage({ params }: Props) {
       <Nav />
       <div className="hero-gradient relative py-16 sm:py-20 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
         <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-bg" />
-        <div className="relative z-10">
+        <div className="relative z-10 flex flex-col items-center">
           <p className="section-label mb-3">App Dev Canada</p>
-          <h1 className="text-copy text-3xl sm:text-4xl font-bold tracking-tight">PresenceTracker</h1>
+          <Image
+            src="/images/presencetracker-icon.svg"
+            alt={t('name')}
+            width={112}
+            height={112}
+            unoptimized
+            className="mb-4"
+          />
+          <h1 className="text-copy text-3xl sm:text-4xl font-bold tracking-tight">{t('name')}</h1>
+          <p className="text-[11px] uppercase tracking-wider font-semibold text-muted mt-2 mb-5">{t('category')}</p>
+          <StoreLinks />
         </div>
       </div>
       <main className="max-w-3xl mx-auto px-6 pb-20 pt-10">
         <PresenceTrackerTabs />
         <div className="pt-8 border-t border-border">
-          <Link href="/" className="text-[13px] text-muted hover:text-label transition-colors duration-150">
+          <Link href="/" className="text-[13px] text-copy font-semibold hover:text-label transition-colors duration-150">
             ← Back
           </Link>
         </div>
+        <SiteFooter />
       </main>
     </>
   );
