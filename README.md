@@ -7,7 +7,7 @@ Live at [appdevcanada.ca](https://appdevcanada.ca).
 ## Tech stack
 
 - **Framework:** Next.js 15 (App Router)
-- **Styling:** Tailwind CSS v3
+- **Styling:** Tailwind CSS v3, font is Nunito (`next/font/google`, wired in `app/[locale]/layout.tsx` and `tailwind.config.ts`)
 - **i18n:** next-intl v3 — locales: `en`, `fr`, `es`, `pt`, `zh` (default `en`)
 - **Language:** TypeScript
 - **Hosting:** Vercel, deployed from `main`
@@ -43,6 +43,9 @@ app/
   presencetracker/get/       # device-aware smart redirect (see below), not locale-scoped
   robots.ts / sitemap.ts / manifest.ts
 components/                  # shared React components
+  SiteFooter.tsx             # shared site footer (copyright + Privacy Policy/Support links), used by home page and PresenceTracker details page
+  PrivacyPolicyBody.tsx      # shared privacy-policy renderer (reads `privacy.sections` from messages), used by both the PresenceTracker Privacy tab and the standalone privacy page
+  PresenceTrackerTabs.tsx    # PresenceTracker details page: About tab (hero content, What's New, feature list, trust/pricing blocks) + Privacy tab
 i18n/
   routing.ts                 # defineRouting (locales, default locale) — Edge-safe, used by middleware
   navigation.ts               # createNavigation exports (Link, redirect, useRouter, usePathname)
@@ -65,10 +68,11 @@ middleware.ts                # next-intl locale routing
 - `app/sitemap.ts` and `app/robots.ts` are generated from the same locale list.
 - `app/[locale]/opengraph-image.tsx` renders a branded per-locale social share image on the fly via `next/og`.
 
-## PresenceTracker links
+## Presence Tracker links
 
-- App Store and Google Play URLs live in `lib/presencetracker-links.ts`. Google Play is `null` until Android ships — the badge on the details page renders disabled/dimmed while it is.
-- `appdevcanada.ca/presencetracker/get` is a device-aware redirect meant for use in social bios: iPhone visitors go straight to the App Store, everyone else lands on the details page (or Google Play once that URL is set).
+- App Store and Google Play URLs live in `lib/presencetracker-links.ts`. Both are live — the brand name is "Presence Tracker" (with a space) in all user-facing copy; only internal identifiers (route segments, the `apps.presencetracker` message key, the Android package id) keep the no-space form and must never change, since the app stores reference those URLs directly.
+- `appdevcanada.ca/presencetracker/get` is a device-aware redirect meant for use in social bios: iPhone visitors go to the App Store, Android visitors go to Google Play, everyone else lands on the details page.
+- The details page pulls real screenshots from the Presence Tracker app repo (`public/images/presencetracker-screenshot-*.png`) and content from that repo's `src/locales/content/*.ts` (feature copy, legal text) — when the app ships a new version, re-check those against the website's copy rather than drafting fresh text.
 
 ## Deployment
 
