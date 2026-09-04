@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { SITE_URL, SITE_NAME, ogLocale } from '@/lib/seo';
+import { Analytics } from '@vercel/analytics/next';
 import '@/app/globals.css';
 
 const nunito = Nunito({ subsets: ['latin'], variable: '--font-nunito', display: 'swap' });
@@ -97,6 +98,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <NextIntlClientProvider messages={messages}>
             {children}
           </NextIntlClientProvider>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
