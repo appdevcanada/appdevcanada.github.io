@@ -153,6 +153,7 @@ function WhyChooseSection() {
 function AppsSection() {
   const t = useTranslations('apps');
   const features = [t('presencetracker.feature1'), t('presencetracker.feature2'), t('presencetracker.feature3'), t('presencetracker.feature4')];
+  const koanlyFeatures = [t('koanly.feature1'), t('koanly.feature2'), t('koanly.feature3'), t('koanly.feature4')];
 
   return (
     <section className="py-8 border-t border-border" aria-labelledby="apps-label">
@@ -183,22 +184,30 @@ function AppsSection() {
           </div>
         </Link>
 
-        {/* Coming soon */}
-        <div className="flex flex-col card-blue border border-brand-blue/25 rounded-2xl p-6">
+        {/* Koanly */}
+        <a
+          href="https://koanly.appdevcanada.ca"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex flex-col card-blue border border-brand-blue/25 rounded-2xl p-6 hover:border-brand-blue/45 transition-colors duration-150"
+        >
           <div className="flex items-start justify-between mb-4">
-            <div className="w-14 h-14 rounded-[14px] bg-brand-blue/15 border border-brand-blue/20 flex items-center justify-center">
-              <span className="text-brand-blue text-2xl font-black leading-none">+</span>
-            </div>
+            <Image src="/images/koanly-icon.svg" alt="Koanly icon" width={72} height={72} unoptimized className="rounded-[14px]" />
           </div>
-          <h3 className="font-bold text-copy text-base leading-tight">{t('comingsoon.title')}</h3>
-          <p className="text-[11px] uppercase tracking-wider font-semibold text-muted mt-1 mb-3">{t('comingsoon.category')}</p>
-          <p className="text-label text-[13.5px] leading-relaxed flex-1">{t('comingsoon.text')}</p>
-          <div className="flex justify-end mt-4">
-            <span className="text-brand-blue text-[13px] font-semibold">{t('comingsoon.cta')}</span>
+          <h3 className="font-bold text-copy text-base leading-tight">{t('koanly.name')}</h3>
+          <p className="text-[11px] uppercase tracking-wider font-semibold text-muted mt-1 mb-3">{t('koanly.category')}</p>
+          <p className="text-label text-[13.5px] leading-relaxed mb-4 flex-1">{t('koanly.desc')}</p>
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {koanlyFeatures.map((f) => (
+              <span key={f} className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium bg-brand-green/10 text-brand-green border border-brand-green/20">
+                <span aria-hidden>✓</span> {f}
+              </span>
+            ))}
           </div>
-        </div>
+        </a>
 
       </div>
+      <p className="mt-4 text-muted text-[12.5px]">{t('more')}</p>
     </section>
   );
 }

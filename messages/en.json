@@ -105,11 +105,14 @@
     },
     "learnMore": "Learn more",
     "more": "More apps coming soon.",
-    "comingsoon": {
-      "title": "More Apps",
-      "category": "Coming Soon",
-      "text": "We're building more focused tools for people navigating real-world challenges. New apps in development.",
-      "cta": "Stay tuned"
+    "koanly": {
+      "name": "Koanly",
+      "category": "Games · Daily Puzzle",
+      "desc": "A daily deduction puzzle. One hidden rule decides whether a row of three tiles passes. Probe to find it, then prove you know it.",
+      "feature1": "One puzzle a day",
+      "feature2": "No account needed",
+      "feature3": "Nothing tracked but the puzzle",
+      "feature4": "Free to play"
     }
   },
   "stats": {

@@ -105,11 +105,14 @@
     },
     "learnMore": "Saiba mais",
     "more": "Mais aplicativos em breve.",
-    "comingsoon": {
-      "title": "Mais aplicativos",
-      "category": "Em breve",
-      "text": "Estamos criando mais ferramentas focadas para desafios do mundo real.",
-      "cta": "Fique atento"
+    "koanly": {
+      "name": "Koanly",
+      "category": "Jogos · Quebra-cabeça diário",
+      "desc": "Um quebra-cabeça de dedução diário. Uma regra oculta decide se uma fileira de três peças passa. Investigue para descobri-la e depois prove que a conhece.",
+      "feature1": "Um quebra-cabeça por dia",
+      "feature2": "Nenhuma conta necessária",
+      "feature3": "Nada rastreado além do quebra-cabeça",
+      "feature4": "Grátis"
     }
   },
   "stats": {

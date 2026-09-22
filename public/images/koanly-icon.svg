@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Koanly">
+  <!-- The game's atom is a row of three tiles varying in colour, shape and size, so
+       that is the mark. Solid fills and no pattern or stroke: the app's dotted and
+       striped fills disappear below about 32px, and an ink ground keeps the icon
+       legible on light and dark browser chrome alike. -->
+  <rect width="64" height="64" rx="14" fill="#241f1a"/>
+  <circle cx="15" cy="32" r="7" fill="#d94f3d"/>
+  <rect x="25" y="25" width="14" height="14" rx="2.5" fill="#2f9e63"/>
+  <polygon points="49,24 42,39.5 56,39.5" fill="#3d6fd9"/>
+</svg>

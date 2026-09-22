@@ -105,11 +105,14 @@
     },
     "learnMore": "Saber más",
     "more": "Más aplicaciones próximamente.",
-    "comingsoon": {
-      "title": "Más aplicaciones",
-      "category": "Próximamente",
-      "text": "Estamos creando más herramientas enfocadas para desafíos del mundo real.",
-      "cta": "Mantente atento"
+    "koanly": {
+      "name": "Koanly",
+      "category": "Juegos · Rompecabezas diario",
+      "desc": "Un rompecabezas de deducción diario. Una regla oculta decide si una fila de tres fichas pasa. Sondea para descubrirla y luego demuestra que la conoces.",
+      "feature1": "Un rompecabezas al día",
+      "feature2": "Sin cuenta necesaria",
+      "feature3": "Nada rastreado salvo el rompecabezas",
+      "feature4": "Gratis"
     }
   },
   "stats": {

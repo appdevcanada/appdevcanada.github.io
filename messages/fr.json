@@ -105,11 +105,14 @@
     },
     "learnMore": "En savoir plus",
     "more": "D'autres applications arrivent bientôt.",
-    "comingsoon": {
-      "title": "Plus d'applications",
-      "category": "Bientôt disponible",
-      "text": "Nous développons de nouveaux outils ciblés pour des défis du monde réel.",
-      "cta": "Restez connectés"
+    "koanly": {
+      "name": "Koanly",
+      "category": "Jeux · Énigme quotidienne",
+      "desc": "Une énigme de déduction quotidienne. Une règle cachée décide si une rangée de trois tuiles réussit. Sondez pour la trouver, puis prouvez que vous la connaissez.",
+      "feature1": "Une énigme par jour",
+      "feature2": "Aucun compte requis",
+      "feature3": "Rien de suivi hormis l'énigme",
+      "feature4": "Gratuit"
     }
   },
   "stats": {
