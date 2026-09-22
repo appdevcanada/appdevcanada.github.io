@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { FaApple } from 'react-icons/fa6';
 import { ImAndroid } from 'react-icons/im';
-import { HiOutlineViewfinderCircle, HiOutlineSparkles, HiOutlineCheckBadge } from 'react-icons/hi2';
+import { HiOutlineViewfinderCircle, HiOutlineSparkles, HiOutlineCheckBadge, HiOutlineGlobeAlt } from 'react-icons/hi2';
 import { Link } from '@/i18n/navigation';
 import { Nav } from '@/components/Nav';
 import { SiteFooter } from '@/components/SiteFooter';
@@ -193,6 +193,9 @@ function AppsSection() {
         >
           <div className="flex items-start justify-between mb-4">
             <Image src="/images/koanly-icon.svg" alt="Koanly icon" width={72} height={72} unoptimized className="rounded-[14px]" />
+            <span className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-surface border border-border text-white" aria-label="Play in your browser">
+              <HiOutlineGlobeAlt size={18} aria-hidden="true" />
+            </span>
           </div>
           <h3 className="font-bold text-copy text-base leading-tight">{t('koanly.name')}</h3>
           <p className="text-[11px] uppercase tracking-wider font-semibold text-muted mt-1 mb-3">{t('koanly.category')}</p>
