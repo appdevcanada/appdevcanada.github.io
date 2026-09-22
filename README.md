@@ -74,6 +74,11 @@ middleware.ts                # next-intl locale routing
 - `appdevcanada.ca/presencetracker/get` is a device-aware redirect meant for use in social bios: iPhone visitors go to the App Store, Android visitors go to Google Play, everyone else lands on the details page.
 - The details page pulls real screenshots from the Presence Tracker app repo (`public/images/presencetracker-screenshot-*.png`) and content from that repo's `src/locales/content/*.ts` (feature copy, legal text) — when the app ships a new version, re-check those against the website's copy rather than drafting fresh text.
 
+## Apps section (home page)
+
+- The home page's Apps section lists each app as its own card (Presence Tracker, Koanly) plus a "more apps coming soon" banner (`apps.more` message key) below them — keep that banner even when adding new app cards, it signals the studio is still shipping.
+- Koanly card content/icon (`public/images/koanly-icon.svg`) is sourced from the Koanly app repo (`/Volumes/MacSSDII/Development/Apps/koanly`), which is a separate static Vite/React site hosted at `koanly.appdevcanada.ca` — not part of this Next.js app.
+
 ## Deployment
 
 - **Host:** Vercel — Framework Preset must be set to **Next.js** (setting it to "Other" causes a `__dirname is not defined` middleware error).
