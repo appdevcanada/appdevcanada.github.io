@@ -210,7 +210,12 @@ function AppsSection() {
         </a>
 
       </div>
-      <p className="mt-4 text-muted text-[12.5px]">{t('more')}</p>
+      <div className="mt-4 flex items-center gap-4 card-blue border border-brand-blue/25 rounded-2xl p-6">
+        <div className="w-14 h-14 rounded-[14px] bg-brand-blue/15 border border-brand-blue/20 flex items-center justify-center flex-shrink-0">
+          <span className="text-brand-blue text-2xl font-black leading-none">+</span>
+        </div>
+        <p className="text-copy text-[15px] font-medium leading-relaxed">{t('more')}</p>
+      </div>
     </section>
   );
 }
