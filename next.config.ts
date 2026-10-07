@@ -12,6 +12,12 @@ const nextConfig: NextConfig = {
   // reliably in <head> for every visitor and unfurler (Slack, Twitter, iMessage), so
   // treat every request like a bot and disable streaming metadata entirely.
   htmlLimitedBots: /.*/,
+  // The opengraph-image route reads public/images/logo.png via fs at request time.
+  // Next's file tracing doesn't follow that dynamic path, so Vercel's serverless
+  // bundle omits it (ENOENT -> 500 in production only, not in local `next start`).
+  outputFileTracingIncludes: {
+    '/[locale]/opengraph-image': ['./public/images/logo.png'],
+  },
 };
 
 export default withNextIntl(nextConfig);
