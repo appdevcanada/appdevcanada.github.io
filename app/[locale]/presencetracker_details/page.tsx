@@ -70,7 +70,7 @@ export default async function PresenceTrackerDetailsPage({ params }: Props) {
       </div>
       <main className="max-w-3xl mx-auto px-6 pb-20 pt-10">
         <PresenceTrackerTabs />
-        <div className="pt-8 border-t border-border">
+        <div className="mt-8 pt-8 border-t border-border">
           <Link href="/" className="text-[13px] text-copy font-semibold hover:text-label transition-colors duration-150">
             ← Back
           </Link>
