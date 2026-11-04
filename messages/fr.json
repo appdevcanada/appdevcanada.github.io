@@ -276,7 +276,7 @@
     "back": "← Retour",
     "eyebrow": "Presence Tracker",
     "title": "Conditions d'utilisation",
-    "updated": "Dernière mise à jour : août 2026",
+    "updated": "Dernière mise à jour : novembre 2026",
     "description": "Conditions d'utilisation et contrat de licence d'utilisateur final pour l'application Presence Tracker.",
     "sections": [
       {
@@ -335,7 +335,7 @@
       {
         "title": "VIII. DISPONIBILITÉ, SÉCURITÉ ET RESPONSABILITÉ RELATIVE AUX DONNÉES",
         "paragraphs": [
-          "L'Application est disponible pour les appareils mobiles compatibles fonctionnant sous Apple iOS 16.0 ou version ultérieure. Nous ne garantissons pas la compatibilité avec tous les matériels ou logiciels. Nous ne garantissons pas que l'accès à l'Application sera ininterrompu, opportun ou exempt d'erreurs. Nous pouvons modifier, mettre à jour, suspendre ou cesser l'Application sans préavis.",
+          "L'Application est disponible pour les appareils mobiles compatibles fonctionnant sous Apple iOS 16.0 ou version ultérieure ou Android 7.0 ou version ultérieure. Nous ne garantissons pas la compatibilité avec tous les matériels ou logiciels. Nous ne garantissons pas que l'accès à l'Application sera ininterrompu, opportun ou exempt d'erreurs. Nous pouvons modifier, mettre à jour, suspendre ou cesser l'Application sans préavis.",
           "Étant donné que vos données de voyage sont stockées exclusivement sur votre appareil et ne nous sont jamais transmises :"
         ],
         "items": [
@@ -377,7 +377,7 @@
       {
         "title": "XIV. BÉNÉFICIAIRE TIER",
         "paragraphs": [
-          "Vous reconnaissez qu'Apple et les filiales d'Apple sont des bénéficiaires tiers de la présente Convention. Dès votre acceptation de ses termes, Apple aura le droit d'en faire exécuter les dispositions à titre de bénéficiaire tiers."
+          "Si vous avez obtenu l'Application sur l'App Store d'Apple, vous reconnaissez qu'Apple et les filiales d'Apple sont des bénéficiaires tiers de la présente Convention et que, dès votre acceptation, Apple aura le droit de faire exécuter la présente Convention à votre encontre à titre de bénéficiaire tiers. Si vous avez obtenu l'Application sur Google Play, vous reconnaissez que Google n'est pas partie à la présente Convention et n'assume aucune responsabilité à l'égard de l'Application ou de son contenu."
         ]
       },
       {

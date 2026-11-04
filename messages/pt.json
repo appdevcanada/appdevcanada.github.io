@@ -276,7 +276,7 @@
     "back": "← Voltar",
     "eyebrow": "Presence Tracker",
     "title": "Termos de Uso",
-    "updated": "Última atualização: agosto de 2026",
+    "updated": "Última atualização: novembro de 2026",
     "description": "Termos de Uso e Contrato de Licença de Usuário Final do aplicativo Presence Tracker.",
     "sections": [
       {
@@ -335,7 +335,7 @@
       {
         "title": "VIII. DISPONIBILIDADE, SEGURANÇA E RESPONSABILIDADE SOBRE OS DADOS",
         "paragraphs": [
-          "O Aplicativo está disponível para dispositivos móveis compatíveis que executem o Apple iOS 16.0 ou posterior. Não garantimos a compatibilidade com todos os equipamentos ou softwares. Não garantimos que o acesso ao Aplicativo será ininterrupto, oportuno ou isento de erros. Podemos modificar, atualizar, suspender ou descontinuar o Aplicativo sem aviso prévio.",
+          "O Aplicativo está disponível para dispositivos móveis compatíveis que executem o Apple iOS 16.0 ou posterior ou o Android 7.0 ou posterior. Não garantimos a compatibilidade com todos os equipamentos ou softwares. Não garantimos que o acesso ao Aplicativo será ininterrupto, oportuno ou isento de erros. Podemos modificar, atualizar, suspender ou descontinuar o Aplicativo sem aviso prévio.",
           "Como seus dados de viagem são armazenados exclusivamente em seu dispositivo e nunca nos são transmitidos:"
         ],
         "items": [
@@ -377,7 +377,7 @@
       {
         "title": "XIV. BENEFICIÁRIO TERCEIRO",
         "paragraphs": [
-          "Você reconhece que a Apple e as subsidiárias da Apple são beneficiárias terceiras deste Contrato. Desde sua aceitação, a Apple terá o direito de executar este Contrato como beneficiária terceira."
+          "Se você obteve o Aplicativo na App Store da Apple, você reconhece que a Apple e as subsidiárias da Apple são beneficiárias terceiras deste Contrato e que, desde sua aceitação, a Apple terá o direito de executar este Contrato contra você como beneficiária terceira. Se você obteve o Aplicativo no Google Play, você reconhece que o Google não é parte deste Contrato e não tem nenhuma responsabilidade pelo Aplicativo ou por seu conteúdo."
         ]
       },
       {

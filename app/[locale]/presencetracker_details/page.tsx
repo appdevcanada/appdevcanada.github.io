@@ -75,7 +75,7 @@ export default async function PresenceTrackerDetailsPage({ params }: Props) {
             ← Back
           </Link>
         </div>
-        <SiteFooter extraLink={{ href: '/presencetracker/terms', label: tTerms('title') }} />
+        <SiteFooter privacyHref="/presencetracker/privacy" extraLink={{ href: '/presencetracker/terms', label: tTerms('title') }} />
       </main>
     </>
   );

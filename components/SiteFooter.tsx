@@ -4,9 +4,11 @@ import { Link } from '@/i18n/navigation';
 export function SiteFooter({
   attribution,
   extraLink,
+  privacyHref = '/privacy',
 }: {
   attribution?: React.ReactNode;
   extraLink?: { href: string; label: string };
+  privacyHref?: string;
 }) {
   const t = useTranslations('footer');
   return (
@@ -14,7 +16,7 @@ export function SiteFooter({
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <span className="text-muted text-[12.5px]">{t('copy')}</span>
         <nav className="flex gap-5" aria-label="Footer links">
-          <Link href="/privacy" className="text-[12.5px] text-muted hover:text-label transition-colors duration-150">
+          <Link href={privacyHref} className="text-[12.5px] text-muted hover:text-label transition-colors duration-150">
             {t('privacy')}
           </Link>
           {extraLink && (

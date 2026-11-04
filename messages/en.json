@@ -276,7 +276,7 @@
     "back": "← Back",
     "eyebrow": "Presence Tracker",
     "title": "Terms of Use",
-    "updated": "Last updated: August 2026",
+    "updated": "Last updated: November 2026",
     "description": "Terms of Use and End User License Agreement for the Presence Tracker app.",
     "sections": [
       {
@@ -335,7 +335,7 @@
       {
         "title": "VIII. AVAILABILITY, SECURITY, AND DATA RESPONSIBILITY",
         "paragraphs": [
-          "The App is available for compatible mobile devices running Apple iOS 16.0 or later. We do not warrant compatibility with all hardware or software. We make no warranty that access will be uninterrupted, timely, or error-free. We may change, update, suspend, or discontinue the App without notice.",
+          "The App is available for compatible mobile devices running Apple iOS 16.0 or later or Android 7.0 or later. We do not warrant compatibility with all hardware or software. We make no warranty that access will be uninterrupted, timely, or error-free. We may change, update, suspend, or discontinue the App without notice.",
           "Because your trip data is stored exclusively on your device and is never transmitted to us:"
         ],
         "items": [
@@ -377,7 +377,7 @@
       {
         "title": "XIV. THIRD-PARTY BENEFICIARY",
         "paragraphs": [
-          "You acknowledge that Apple and Apple's subsidiaries are third-party beneficiaries of this Agreement. Upon your acceptance, Apple has the right to enforce this Agreement as a third-party beneficiary."
+          "If you obtained the App from the Apple App Store, you acknowledge that Apple and Apple's subsidiaries are third-party beneficiaries of this Agreement and that, upon your acceptance, Apple has the right to enforce this Agreement against you as a third-party beneficiary. If you obtained the App from Google Play, you acknowledge that Google is not a party to this Agreement and has no responsibility for the App or its content."
         ]
       },
       {
