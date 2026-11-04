@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function PresenceTrackerDetailsPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'apps.presencetracker' });
+  const tTerms = await getTranslations({ locale, namespace: 'terms' });
 
   const softwareAppJsonLd = {
     '@context': 'https://schema.org',
@@ -74,7 +75,7 @@ export default async function PresenceTrackerDetailsPage({ params }: Props) {
             ← Back
           </Link>
         </div>
-        <SiteFooter />
+        <SiteFooter extraLink={{ href: '/presencetracker/terms', label: tTerms('title') }} />
       </main>
     </>
   );

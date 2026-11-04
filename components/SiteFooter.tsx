@@ -1,7 +1,13 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
-export function SiteFooter({ attribution }: { attribution?: React.ReactNode }) {
+export function SiteFooter({
+  attribution,
+  extraLink,
+}: {
+  attribution?: React.ReactNode;
+  extraLink?: { href: string; label: string };
+}) {
   const t = useTranslations('footer');
   return (
     <footer className="flex flex-col gap-3 pt-6 pb-10 border-t border-border">
@@ -11,6 +17,11 @@ export function SiteFooter({ attribution }: { attribution?: React.ReactNode }) {
           <Link href="/privacy" className="text-[12.5px] text-muted hover:text-label transition-colors duration-150">
             {t('privacy')}
           </Link>
+          {extraLink && (
+            <Link href={extraLink.href} className="text-[12.5px] text-muted hover:text-label transition-colors duration-150">
+              {extraLink.label}
+            </Link>
+          )}
           <a href="mailto:support@appdevcanada.ca" className="text-[12.5px] text-muted hover:text-label transition-colors duration-150">
             {t('support')}
           </a>

@@ -8,6 +8,7 @@ import { HiOutlineShieldCheck, HiOutlineCalendarDays, HiOutlineDocumentArrowDown
 import type { IconType } from 'react-icons';
 import { APP_STORE_URL, GOOGLE_PLAY_URL } from '@/lib/presencetracker-links';
 import { PrivacyPolicyBody } from '@/components/PrivacyPolicyBody';
+import { TermsOfUseBody } from '@/components/TermsOfUseBody';
 
 const SCREENSHOT_FRAME = 'w-full sm:w-[42%] flex-shrink-0 flex items-center justify-center h-[370px] overflow-hidden';
 const SCREENSHOT_IMG = 'h-full w-auto object-contain rounded-2xl';
@@ -332,13 +333,15 @@ function AboutTab() {
 
 
 export function PresenceTrackerTabs() {
-  const [active, setActive] = useState<'about' | 'privacy'>('about');
+  const [active, setActive] = useState<'about' | 'privacy' | 'terms'>('about');
   const t = useTranslations('apps.presencetracker');
   const tPrivacy = useTranslations('privacy');
+  const tTerms = useTranslations('terms');
 
   const tabs = [
     { key: 'about' as const,   label: t('tabAbout') },
     { key: 'privacy' as const, label: tPrivacy('title') },
+    { key: 'terms' as const,   label: tTerms('title') },
   ];
 
   return (
@@ -363,6 +366,7 @@ export function PresenceTrackerTabs() {
 
       {active === 'about'   && <AboutTab />}
       {active === 'privacy' && <PrivacyPolicyBody />}
+      {active === 'terms'   && <TermsOfUseBody />}
     </div>
   );
 }
