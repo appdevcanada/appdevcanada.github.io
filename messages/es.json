@@ -42,9 +42,18 @@
         "workPermit": "Permiso de trabajo",
         "permanentResident": "Residente permanente",
         "cards": [
-          { "title": "Vista de calendario", "desc": "Cada día que pasaste fuera de Canadá, mes a mes y marcado con el motivo del viaje." },
-          { "title": "Exportación para tu solicitud", "desc": "Un informe PDF o un archivo CSV con todo tu historial de viajes y estatus, incluidas las fechas de elegibilidad, listo para adjuntar a una renovación de tarjeta PR o a una solicitud de ciudadanía." },
-          { "title": "Cinco idiomas", "desc": "Compatibilidad completa con español, inglés, francés, portugués y chino simplificado: toda la aplicación, hasta las preguntas frecuentes, la política de privacidad y los términos de uso." }
+          {
+            "title": "Vista de calendario",
+            "desc": "Cada día que pasaste fuera de Canadá, mes a mes y marcado con el motivo del viaje."
+          },
+          {
+            "title": "Exportación para tu solicitud",
+            "desc": "Un informe PDF o un archivo CSV con todo tu historial de viajes y estatus, incluidas las fechas de elegibilidad, listo para adjuntar a una renovación de tarjeta PR o a una solicitud de ciudadanía."
+          },
+          {
+            "title": "Cinco idiomas",
+            "desc": "Compatibilidad completa con español, inglés, francés, portugués y chino simplificado: toda la aplicación, hasta las preguntas frecuentes, la política de privacidad y los términos de uso."
+          }
         ]
       },
       "features": {
@@ -259,6 +268,153 @@
         "title": "9. Contacto",
         "paragraphs": [
           "Si tiene alguna pregunta sobre la presente Política de privacidad, contáctenos en:"
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "back": "← Atrás",
+    "eyebrow": "Presence Tracker",
+    "title": "Términos de uso",
+    "updated": "Última actualización: agosto de 2026",
+    "description": "Términos de uso y contrato de licencia de usuario final para la aplicación Presence Tracker.",
+    "sections": [
+      {
+        "title": "I. INTRODUCCIÓN",
+        "paragraphs": [
+          "Los presentes Términos de uso y contrato de licencia de usuario final (en conjunto, el «Contrato») constituyen un acuerdo jurídicamente vinculante entre usted y Application Development Canada («nosotros», «nuestro» o «la Empresa»), número de empresa 76826 5175, relativo a su acceso y uso de la aplicación móvil Presence Tracker (la «Aplicación»).",
+          "El presente Contrato, junto con nuestra Política de privacidad (que se incorpora por referencia), constituye el acuerdo íntegro entre usted y nosotros respecto a su uso de la Aplicación.",
+          "Lea atentamente el presente Contrato antes de descargar, instalar o usar la Aplicación. Al usar la Aplicación, usted indica que ha leído, comprendido y aceptado el presente Contrato. Si no está de acuerdo, no descargue, instale ni use la Aplicación."
+        ]
+      },
+      {
+        "title": "II. MODIFICACIONES AL PRESENTE CONTRATO",
+        "paragraphs": [
+          "Nos reservamos el derecho de modificar el presente Contrato en cualquier momento. Le mantendremos informado actualizando el Contrato dentro de la Aplicación. Es su responsabilidad revisarlo periódicamente. Su uso continuado de la Aplicación después de cualquier modificación constituye su aceptación del Contrato revisado."
+        ]
+      },
+      {
+        "title": "III. RESTRICCIONES SOBRE QUIÉN PUEDE USAR LA APLICACIÓN",
+        "paragraphs": [
+          "La Aplicación está destinada a usuarios de 18 años de edad o más. Si tiene entre 13 y 17 años, solo puede usar la Aplicación si su padre, madre o tutor legal acepta el presente Contrato en su nombre y asume la plena responsabilidad de su uso. No puede descargar, instalar ni usar la Aplicación si tiene menos de 13 años."
+        ]
+      },
+      {
+        "title": "IV. DISPOSICIONES GENERALES",
+        "paragraphs": [
+          "La Aplicación ayuda a los usuarios a llevar un registro de su presencia física en Canadá con fines relacionados con inmigración, incluida la renovación de la tarjeta de residente permanente y las solicitudes de ciudadanía. Está destinada exclusivamente a su uso personal y no comercial. La Aplicación funciona completamente en su dispositivo y no transmite ningún dato."
+        ]
+      },
+      {
+        "title": "V. CONTRATO DE LICENCIA DE USUARIO FINAL",
+        "paragraphs": [
+          "Al usar la Aplicación, usted se compromete a respetar nuestros derechos de propiedad intelectual y los de terceros. Le otorgamos una licencia limitada, no exclusiva, no transferible, no sublicenciable, no cedible y revocable para acceder a la Aplicación y usarla exclusivamente para sus fines personales y no comerciales. Todos los derechos, títulos e intereses sobre la Aplicación siguen siendo nuestra propiedad exclusiva.",
+          "Cualquier comentario, sugerencia o idea que nos proporcione podrá ser utilizado por nosotros sin restricción ni compensación. Usted no puede ceder ni transferir el presente Contrato sin nuestro consentimiento previo por escrito. Nosotros podemos ceder el presente Contrato en cualquier momento sin previo aviso."
+        ]
+      },
+      {
+        "title": "VI. EXENCIÓN DE RESPONSABILIDAD EN CUANTO A LOS CÁLCULOS",
+        "paragraphs": [
+          "La Aplicación proporciona estimaciones de los días de presencia física en Canadá basadas en la información que usted introduce. Estos cálculos se proporcionan únicamente a título informativo y no constituyen asesoramiento jurídico, fiscal ni en materia de inmigración. Los requisitos, normas y umbrales en materia de inmigración pueden cambiar sin previo aviso. Consulte siempre a un abogado cualificado o a un asesor regulado en inmigración para obtener asesoramiento específico para su situación. Renunciamos expresamente a cualquier responsabilidad por decisiones tomadas basándose en los cálculos de la Aplicación."
+        ]
+      },
+      {
+        "title": "VII. CONDUCTA PROHIBIDA",
+        "paragraphs": [
+          "Usted se compromete a no usar la Aplicación de ninguna manera que:"
+        ],
+        "items": [
+          "sea ilegal, delictiva o no autorizada;",
+          "sea difamatoria para cualquier otra persona;",
+          "infrinja cualquier derecho de autor, derecho sui generis sobre bases de datos o marca comercial;",
+          "abogue, promueva o asista a cualquier acto ilícito;",
+          "eluda cualquier medida de seguridad o técnica."
+        ],
+        "closing": "No podrá poner la Aplicación a disposición de terceros, modificarla, traducirla, realizar ingeniería inversa, descompilarla, desensamblarla ni crear obras derivadas de la Aplicación. No podrá transferir, prestar, alquilar, arrendar ni distribuir la Aplicación, ni usarla para proporcionar servicios a un tercero."
+      },
+      {
+        "title": "VIII. DISPONIBILIDAD, SEGURIDAD Y RESPONSABILIDAD SOBRE LOS DATOS",
+        "paragraphs": [
+          "La Aplicación está disponible para dispositivos móviles compatibles que ejecuten Apple iOS 16.0 o posterior. No garantizamos la compatibilidad con todos los equipos o software. No garantizamos que el acceso a la Aplicación sea ininterrumpido, oportuno o libre de errores. Podemos modificar, actualizar, suspender o discontinuar la Aplicación sin previo aviso.",
+          "Dado que sus datos de viaje se almacenan exclusivamente en su dispositivo y nunca se nos transmiten:"
+        ],
+        "items": [
+          "Usted asume la única responsabilidad de hacer copias de seguridad y proteger esos datos.",
+          "No podemos acceder, restaurar, recuperar ni eliminar sus datos bajo ninguna circunstancia.",
+          "No asumimos responsabilidad alguna por la pérdida de datos derivada de fallos del dispositivo, robo, pérdida, eliminación de la Aplicación, actualizaciones del sistema operativo, sustitución del dispositivo o cualquier otra causa fuera de nuestro control."
+        ]
+      },
+      {
+        "title": "IX. CARGOS",
+        "paragraphs": [
+          "La Aplicación se ofrece por un precio de compra único, según se muestra en el momento de la compra en la tienda de aplicaciones correspondiente. Todas las compras son finales. Los reembolsos se rigen por las políticas de la tienda de aplicaciones. No proporcionamos reembolsos directos, salvo cuando la ley lo exija. Su proveedor de servicios de telecomunicaciones también puede cobrarle por la descarga o el acceso a la Aplicación."
+        ]
+      },
+      {
+        "title": "X. EXENCIÓN DE GARANTÍAS",
+        "paragraphs": [
+          "En la máxima medida permitida por la ley aplicable, el uso de la Aplicación es bajo su propio riesgo. La Aplicación y todo su contenido se proporcionan «tal cual» y «según disponibilidad». Renunciamos a todas las garantías, expresas o implícitas, incluidas las de comerciabilidad, idoneidad para un fin particular y no infracción."
+        ]
+      },
+      {
+        "title": "XI. SITIOS WEB Y RECURSOS DE TERCEROS",
+        "paragraphs": [
+          "La Aplicación puede contener enlaces a otros sitios web. No tenemos control sobre ellos ni asumimos responsabilidad alguna por su contenido. Dichos enlaces se proporcionan únicamente para su conveniencia."
+        ]
+      },
+      {
+        "title": "XII. LIMITACIÓN DE RESPONSABILIDAD",
+        "paragraphs": [
+          "En la máxima medida permitida por la ley aplicable, no seremos responsables de ningún daño, directo o indirecto, derivado de o relacionado con la Aplicación. No seremos responsables bajo ninguna circunstancia de daños especiales, consecuentes, incidentales, ejemplares o punitivos, ni de pérdidas de beneficios o ingresos, incluso si se nos ha advertido específicamente de la posibilidad de dichos daños. Algunas jurisdicciones no permiten la exclusión o limitación de ciertos daños; por tanto, lo anterior puede no aplicarse en la medida en que la ley aplicable lo prohíba."
+        ]
+      },
+      {
+        "title": "XIII. CUMPLIMIENTO LEGAL",
+        "paragraphs": [
+          "Usted declara y garantiza que (i) no se encuentra en un país sujeto a un embargo del gobierno de Canadá o de los Estados Unidos ni designado como país «que apoya el terrorismo», y (ii) no figura en ninguna lista de partes prohibidas o restringidas del gobierno de Canadá o de los Estados Unidos."
+        ]
+      },
+      {
+        "title": "XIV. BENEFICIARIO DE TERCERO",
+        "paragraphs": [
+          "Usted reconoce que Apple y las filiales de Apple son beneficiarios de tercero del presente Contrato. Desde su aceptación, Apple tendrá el derecho de hacer cumplir el presente Contrato como beneficiario de tercero."
+        ]
+      },
+      {
+        "title": "XV. LEY APLICABLE, IDIOMA Y RECLAMACIONES",
+        "paragraphs": [
+          "El presente Contrato se regirá e interpretará de conformidad con las leyes de la provincia de Ontario, Canadá. Cualquier reclamación será decidida exclusivamente por los tribunales competentes de Ontario, Canadá. Cualquier reclamación o causa de acción debe iniciarse dentro del plazo de un (1) año contado desde la fecha en que se produjo el evento que la originó. Usted acepta que cualquier disputa se resolverá de forma individual, y que no podrá consolidar reclamaciones ni actuar en nombre de una clase o grupo cuando la ley aplicable lo prohíba.",
+          "El presente Contrato está redactado en inglés. Cualquier traducción se proporciona únicamente por conveniencia. En caso de discrepancia entre la versión en inglés y una traducción, prevalecerá la versión en inglés, salvo cuando la ley aplicable exija lo contrario."
+        ]
+      },
+      {
+        "title": "XVI. NULIDAD PARCIAL",
+        "paragraphs": [
+          "Si en cualquier momento alguna disposición del presente Contrato es o se vuelve ilegal, inválida o inaplicable, se interpretará de la manera más restrictiva posible para que sea legal, válida y aplicable, o, si no fuera posible, se suprimirá. Los demás términos del presente Contrato seguirán aplicándose con plena eficacia."
+        ]
+      },
+      {
+        "title": "XVII. RESOLUCIÓN",
+        "paragraphs": [
+          "Nos reservamos el derecho de resolver el presente Contrato en cualquier momento, a nuestro exclusivo criterio, por cualquier motivo. En caso de resolución, (a) la licencia y los derechos que se le otorgan en el presente Contrato terminarán; (b) deberá cesar inmediatamente todo uso de la Aplicación. Los artículos V, VI, X, XI, XII, XIII, XV, XVI, XVIII y XIX sobrevivirán a cualquier resolución."
+        ]
+      },
+      {
+        "title": "XVIII. INDEMNIZACIÓN",
+        "paragraphs": [
+          "Usted se compromete a indemnizar, defender y eximir de responsabilidad a Application Development Canada, así como a sus directivos, administradores, empleados y agentes, de cualquier reclamación, daño, pérdida o gasto (incluidos los honorarios legales razonables) derivados de su uso de la Aplicación, de su incumplimiento del presente Contrato o de la violación de derechos de terceros."
+        ]
+      },
+      {
+        "title": "XIX. FUERZA MAYOR",
+        "paragraphs": [
+          "No seremos responsables de ningún incumplimiento o retraso en el cumplimiento de nuestras obligaciones cuando dicho incumplimiento resulte de circunstancias fuera de nuestro control razonable, incluidos actos de Dios, guerras, terrorismo, disturbios, embargos, actos de autoridades civiles o militares, incendios, inundaciones, accidentes, pandemias, huelgas o escasez de transporte, instalaciones, combustible, energía, mano de obra o materiales."
+        ]
+      },
+      {
+        "title": "XX. INFORMACIÓN DE CONTACTO",
+        "paragraphs": [
+          "Si tiene alguna pregunta sobre el presente Contrato o la Aplicación, contáctenos en:"
         ]
       }
     ]

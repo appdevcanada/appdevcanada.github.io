@@ -7,6 +7,7 @@ const LOCALIZED_PATHS: { path: string; priority: number; changeFrequency: Metada
   { path: '', priority: 1, changeFrequency: 'weekly' },
   { path: '/presencetracker_details', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/presencetracker/privacy', priority: 0.3, changeFrequency: 'yearly' },
+  { path: '/presencetracker/terms', priority: 0.3, changeFrequency: 'yearly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

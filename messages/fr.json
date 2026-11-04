@@ -42,9 +42,18 @@
         "workPermit": "Permis de travail",
         "permanentResident": "Résident permanent",
         "cards": [
-          { "title": "Vue calendrier", "desc": "Chaque journée passée à l'extérieur du Canada, présentée mois par mois et marquée du motif du voyage." },
-          { "title": "Export pour votre demande", "desc": "Un rapport PDF ou un fichier CSV couvrant tout votre historique de voyages et de statuts, dates d'admissibilité incluses — prêt à joindre à une demande de renouvellement de carte RP ou de citoyenneté." },
-          { "title": "Cinq langues", "desc": "Prise en charge complète du français, de l'anglais, de l'espagnol, du portugais et du chinois simplifié — toute l'application, jusqu'à la FAQ, la politique de confidentialité et les conditions d'utilisation." }
+          {
+            "title": "Vue calendrier",
+            "desc": "Chaque journée passée à l'extérieur du Canada, présentée mois par mois et marquée du motif du voyage."
+          },
+          {
+            "title": "Export pour votre demande",
+            "desc": "Un rapport PDF ou un fichier CSV couvrant tout votre historique de voyages et de statuts, dates d'admissibilité incluses — prêt à joindre à une demande de renouvellement de carte RP ou de citoyenneté."
+          },
+          {
+            "title": "Cinq langues",
+            "desc": "Prise en charge complète du français, de l'anglais, de l'espagnol, du portugais et du chinois simplifié — toute l'application, jusqu'à la FAQ, la politique de confidentialité et les conditions d'utilisation."
+          }
         ]
       },
       "features": {
@@ -259,6 +268,153 @@
         "title": "9. Nous contacter",
         "paragraphs": [
           "Si vous avez des questions concernant la présente Politique, contactez-nous à :"
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "back": "← Retour",
+    "eyebrow": "Presence Tracker",
+    "title": "Conditions d'utilisation",
+    "updated": "Dernière mise à jour : août 2026",
+    "description": "Conditions d'utilisation et contrat de licence d'utilisateur final pour l'application Presence Tracker.",
+    "sections": [
+      {
+        "title": "I. INTRODUCTION",
+        "paragraphs": [
+          "Les présentes Conditions d'utilisation et contrat de licence d'utilisateur final (collectivement, la « Convention ») constituent une convention juridiquement contraignante entre vous et Application Development Canada (« nous », « notre » ou « la Société »), numéro d'entreprise 76826 5175, relativement à votre accès et à votre utilisation de l'application mobile Presence Tracker (l'« Application »).",
+          "La présente Convention, conjointement avec notre Politique de confidentialité (qui est incorporée par référence), constitue l'intégralité de l'accord entre vous et nous concernant votre utilisation de l'Application.",
+          "Veuillez lire attentivement la présente Convention avant de télécharger, d'installer ou d'utiliser l'Application. En utilisant l'Application, vous indiquez que vous avez lu, compris et accepté la présente Convention. Si vous n'êtes pas d'accord, ne téléchargez, n'installez et n'utilisez pas l'Application."
+        ]
+      },
+      {
+        "title": "II. MODIFICATIONS À LA PRÉSENTE CONVENTION",
+        "paragraphs": [
+          "Nous nous réservons le droit de modifier la présente Convention en tout temps. Nous vous tiendrons informés en publiant la Convention mise à jour dans l'Application. Il vous incombe de la consulter périodiquement. Votre utilisation continue de l'Application après la publication de toute modification constitue votre acceptation de la Convention révisée."
+        ]
+      },
+      {
+        "title": "III. RESTRICTIONS RELATIVES À L'UTILISATION DE L'APPLICATION",
+        "paragraphs": [
+          "L'Application est destinée aux utilisateurs âgés de 18 ans ou plus. Si vous êtes âgé de 13 à 17 ans, vous ne pouvez utiliser l'Application que si votre parent ou tuteur légal accepte la présente Convention en votre nom et assume l'entière responsabilité de votre utilisation. Vous ne pouvez pas télécharger, installer ou utiliser l'Application si vous êtes âgé de moins de 13 ans."
+        ]
+      },
+      {
+        "title": "IV. DISPOSITIONS GÉNÉRALES",
+        "paragraphs": [
+          "L'Application permet aux utilisateurs de suivre leur présence physique au Canada à des fins d'immigration, notamment pour le renouvellement de la carte de résident permanent et les demandes de citoyenneté. Elle est destinée exclusivement à votre usage personnel et non commercial. L'Application fonctionne entièrement sur votre appareil et ne transmet aucune donnée."
+        ]
+      },
+      {
+        "title": "V. CONTRAT DE LICENCE D'UTILISATEUR FINAL",
+        "paragraphs": [
+          "En utilisant l'Application, vous vous engagez à respecter nos droits de propriété intellectuelle, ainsi que ceux de tiers. Nous vous accordons une licence limitée, non exclusive, non transférable, non sous-licenciable, non cessible et révocable pour accéder à l'Application et l'utiliser exclusivement à des fins personnelles et non commerciales. Tous les droits, titres et intérêts relatifs à l'Application demeurent notre propriété exclusive.",
+          "Tout commentaire, suggestion ou idée que vous nous soumettez peut être utilisé par nous sans restriction ni compensation. Vous ne pouvez pas céder ou transférer la présente Convention sans notre consentement écrit préalable. Nous pouvons céder la présente Convention en tout temps sans préavis."
+        ]
+      },
+      {
+        "title": "VI. EXCLUSION DE RESPONSABILITÉ RELATIVEMENT AUX CALCULS",
+        "paragraphs": [
+          "L'Application fournit des estimations du nombre de jours de présence physique au Canada fondées sur les renseignements que vous saisissez. Ces calculs sont fournis à titre informatif uniquement et ne constituent pas un conseil juridique, fiscal ou en matière d'immigration. Les exigences, règles et seuils en matière d'immigration peuvent changer sans préavis. Vous devez toujours consulter un avocat qualifié ou un conseiller en immigration réglementé pour obtenir des conseils adaptés à votre situation. Nous déclinons expressément toute responsabilité pour les décisions prises sur la base des calculs de l'Application."
+        ]
+      },
+      {
+        "title": "VII. COMPORTEMENT INTERDIT",
+        "paragraphs": [
+          "Vous vous engagez à ne pas utiliser l'Application de manière :"
+        ],
+        "items": [
+          "illégale, criminelle ou non autorisée;",
+          "diffamatoire envers toute autre personne;",
+          "portant atteinte à un droit d'auteur, à un droit sui generis de base de données ou à une marque de commerce;",
+          "favorisant, encourageant ou assistant tout acte illégal;",
+          "contournant toute mesure de sécurité ou technique."
+        ],
+        "closing": "Vous ne pouvez pas rendre l'Application accessible à des tiers, la modifier, la traduire, procéder à une ingénierie inverse, la décompiler, la désassembler ou créer des œuvres dérivées à partir de l'Application. Vous ne pouvez pas transférer, prêter, louer, distribuer l'Application, ni l'utiliser pour fournir des services à un tiers."
+      },
+      {
+        "title": "VIII. DISPONIBILITÉ, SÉCURITÉ ET RESPONSABILITÉ RELATIVE AUX DONNÉES",
+        "paragraphs": [
+          "L'Application est disponible pour les appareils mobiles compatibles fonctionnant sous Apple iOS 16.0 ou version ultérieure. Nous ne garantissons pas la compatibilité avec tous les matériels ou logiciels. Nous ne garantissons pas que l'accès à l'Application sera ininterrompu, opportun ou exempt d'erreurs. Nous pouvons modifier, mettre à jour, suspendre ou cesser l'Application sans préavis.",
+          "Étant donné que vos données de voyage sont stockées exclusivement sur votre appareil et ne nous sont jamais transmises :"
+        ],
+        "items": [
+          "Vous assumez l'entière responsabilité de la sauvegarde et de la sécurisation de ces données.",
+          "Nous ne pouvons accéder à, restaurer, récupérer ou supprimer vos données en aucune circonstance.",
+          "Nous déclinons toute responsabilité pour la perte de données résultant d'une défaillance de l'appareil, d'un vol, d'une suppression de l'Application, d'une mise à jour du système d'exploitation, d'un remplacement d'appareil ou de toute autre cause indépendante de notre volonté."
+        ]
+      },
+      {
+        "title": "IX. FRAIS",
+        "paragraphs": [
+          "L'Application est offerte moyennant un prix d'achat unique, tel qu'affiché au moment de l'achat dans la boutique d'applications applicable. Tous les achats sont finaux. Les remboursements sont régis par les politiques de la boutique d'applications. Nous ne fournissons pas de remboursements directs, sauf lorsque la loi l'exige. Votre fournisseur de services de télécommunications peut également vous facturer le téléchargement ou l'accès à l'Application."
+        ]
+      },
+      {
+        "title": "X. EXCLUSION DE GARANTIES",
+        "paragraphs": [
+          "Dans la mesure maximale permise par la loi applicable, vous utilisez l'Application à vos propres risques. L'Application et tout son contenu sont fournis « tels quels » et « selon la disponibilité ». Nous déclinons toute garantie, expresse ou implicite, y compris la qualité marchande, l'adéquation à un usage particulier et la non-contrefaçon."
+        ]
+      },
+      {
+        "title": "XI. SITES WEB ET RESSOURCES TIERS",
+        "paragraphs": [
+          "L'Application peut contenir des liens vers d'autres sites Web. Nous n'exerçons aucun contrôle sur ces sites et n'assumons aucune responsabilité quant à leur contenu. Ces liens sont fournis uniquement pour votre commodité."
+        ]
+      },
+      {
+        "title": "XII. LIMITATION DE RESPONSABILITÉ",
+        "paragraphs": [
+          "Dans la mesure maximale permise par la loi applicable, nous ne saurions être tenus responsables de quelque dommage que ce soit, direct ou indirect, découlant de ou lié à l'Application. Nous ne saurions être tenus responsables de dommages spéciaux, consécutifs, indirects, exemplaires ou punitifs, ni de pertes de profits ou de revenus, même si nous avons été expressément avisés de la possibilité de tels dommages. Certains territoires ne permettent pas l'exclusion ou la limitation de certains dommages; par conséquent, ce qui précède peut ne pas s'appliquer dans la mesure où la loi applicable l'interdit."
+        ]
+      },
+      {
+        "title": "XIII. CONFORMITÉ LÉGALE",
+        "paragraphs": [
+          "Vous déclarez et garantissez que (i) vous ne résidez pas dans un pays assujetti à un embargo du gouvernement du Canada ou des États-Unis ou désigné comme pays « soutenant le terrorisme », et (ii) vous ne figurez sur aucune liste de parties prohibées ou restreintes du gouvernement du Canada ou des États-Unis."
+        ]
+      },
+      {
+        "title": "XIV. BÉNÉFICIAIRE TIER",
+        "paragraphs": [
+          "Vous reconnaissez qu'Apple et les filiales d'Apple sont des bénéficiaires tiers de la présente Convention. Dès votre acceptation de ses termes, Apple aura le droit d'en faire exécuter les dispositions à titre de bénéficiaire tiers."
+        ]
+      },
+      {
+        "title": "XV. DROIT APPLICABLE, LANGUE ET RÉCLAMATIONS",
+        "paragraphs": [
+          "La présente Convention est régie par et interprétée conformément aux lois de la province de l'Ontario, au Canada. Toute réclamation sera exclusivement tranchée par les tribunaux compétents de l'Ontario, au Canada. Toute réclamation ou cause d'action doit être introduite dans un délai d'un (1) an suivant la survenance de l'événement qui lui donne naissance. Vous convenez que tout litige sera résolu individuellement et que vous ne pouvez pas consolider des réclamations ou agir au nom d'une classe ou d'un groupe lorsque la loi applicable l'interdit.",
+          "La présente Convention est rédigée en anglais. Toute traduction est fournie à titre de commodité uniquement. En cas de divergence entre la version anglaise et une traduction, la version anglaise prévaut, sauf lorsque la loi applicable en exige autrement."
+        ]
+      },
+      {
+        "title": "XVI. AUTONOMIE DES CLAUSES",
+        "paragraphs": [
+          "Si une disposition de la présente Convention est ou devient illégale, invalide ou inopposable, elle sera interprétée de la manière la plus restrictive possible afin de la rendre légale, valide et opposable, ou, à défaut, supprimée. Les autres dispositions de la présente Convention demeureront en vigueur et continueront de s'appliquer pleinement."
+        ]
+      },
+      {
+        "title": "XVII. RÉSILIATION",
+        "paragraphs": [
+          "Nous nous réservons le droit de résilier la présente Convention en tout temps, à notre seule discrétion, pour quelque raison que ce soit. En cas de résiliation, (a) la licence et les droits qui vous sont accordés aux termes de la présente Convention prendront fin; (b) vous devez cesser immédiatement toute utilisation de l'Application. Les articles V, VI, X, XI, XII, XIII, XV, XVI, XVIII et XIX survivront à toute résiliation."
+        ]
+      },
+      {
+        "title": "XVIII. DÉFENSE ET INDEMNISATION",
+        "paragraphs": [
+          "Vous vous engagez à indemniser, défendre et dégager de toute responsabilité Application Development Canada, ainsi que ses dirigeants, administrateurs, employés et mandataires, de toute réclamation, dommage, perte ou dépense (y compris les honoraires juridiques raisonnables) découlant de votre utilisation de l'Application, de votre violation de la présente Convention ou de la violation de droits de tiers."
+        ]
+      },
+      {
+        "title": "XIX. FORCE MAJEURE",
+        "paragraphs": [
+          "Nous ne serons pas responsables de tout manquement ou retard dans l'exécution de nos obligations lorsque ce manquement résulte de circonstances indépendantes de notre volonté raisonnable, notamment les cas de force majeure, les actes de guerre, de terrorisme, les émeutes, les embargos, les actes des autorités civiles ou militaires, les incendies, les inondations, les accidents, les pandémies, les grèves ou les pénuries de transport, d'installations, de carburant, d'énergie, de main-d'œuvre ou de matériaux."
+        ]
+      },
+      {
+        "title": "XX. COORDONNÉES",
+        "paragraphs": [
+          "Si vous avez des questions concernant la présente Convention ou l'Application, contactez-nous à :"
         ]
       }
     ]

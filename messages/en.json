@@ -42,9 +42,18 @@
         "workPermit": "Work permit",
         "permanentResident": "Permanent resident",
         "cards": [
-          { "title": "Calendar view", "desc": "Every day you spent outside Canada, laid out month by month and marked with the reason for the trip." },
-          { "title": "Export for your application", "desc": "A PDF report or CSV file covering your full travel and status history, with eligibility dates included — ready to attach to a PR renewal or citizenship application." },
-          { "title": "Five languages", "desc": "English, French, Spanish, Portuguese and Simplified Chinese — the entire app, down to the FAQ, privacy policy and terms of use." }
+          {
+            "title": "Calendar view",
+            "desc": "Every day you spent outside Canada, laid out month by month and marked with the reason for the trip."
+          },
+          {
+            "title": "Export for your application",
+            "desc": "A PDF report or CSV file covering your full travel and status history, with eligibility dates included — ready to attach to a PR renewal or citizenship application."
+          },
+          {
+            "title": "Five languages",
+            "desc": "English, French, Spanish, Portuguese and Simplified Chinese — the entire app, down to the FAQ, privacy policy and terms of use."
+          }
         ]
       },
       "features": {
@@ -259,6 +268,153 @@
         "title": "9. Contact us",
         "paragraphs": [
           "If you have any questions about this Privacy Policy, contact us at:"
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "back": "← Back",
+    "eyebrow": "Presence Tracker",
+    "title": "Terms of Use",
+    "updated": "Last updated: August 2026",
+    "description": "Terms of Use and End User License Agreement for the Presence Tracker app.",
+    "sections": [
+      {
+        "title": "I. INTRODUCTION",
+        "paragraphs": [
+          "These Terms of Use and End User License Agreement (the \"Agreement\") constitute a legally binding agreement between you and Application Development Canada (\"we\", \"us\", or \"our\"), Company Number 76826 5175, concerning your access to and use of the Presence Tracker mobile application (the \"App\").",
+          "This Agreement, together with our Privacy Policy (which is incorporated by reference), constitutes the entire agreement between you and us regarding your use of the App.",
+          "Please read this Agreement carefully before downloading, installing, or using the App. By using the App, you indicate that you have read, understood, and accepted this Agreement. If you do not agree, do not download, install, or use the App."
+        ]
+      },
+      {
+        "title": "II. CHANGES TO THIS AGREEMENT",
+        "paragraphs": [
+          "We reserve the right to modify this Agreement at any time. We will keep you informed by updating the Agreement within the App. It is your responsibility to review it periodically. Your continued use of the App after any changes constitutes your acceptance of the revised Agreement."
+        ]
+      },
+      {
+        "title": "III. RESTRICTIONS ON WHO CAN USE THE APP",
+        "paragraphs": [
+          "The App is intended for users 18 years of age or older. If you are between 13 and 17, you may use the App only if your parent or legal guardian accepts this Agreement on your behalf and assumes full responsibility for your use. You may not download, install, or use the App if you are under 13."
+        ]
+      },
+      {
+        "title": "IV. GENERAL TERMS",
+        "paragraphs": [
+          "The App helps users track physical presence in Canada for immigration-related purposes, including PR card renewal and citizenship applications. It is intended solely for your personal, non-commercial use. The App operates entirely on your device and does not transmit any data to us."
+        ]
+      },
+      {
+        "title": "V. END USER LICENSE AGREEMENT",
+        "paragraphs": [
+          "By using the App, you undertake to respect our intellectual property rights and those of third parties. We grant you a limited, non-exclusive, non-transferable, non-sublicensable, non-assignable, and revocable license to access and use the App solely for your own non-commercial purposes. All rights, titles, and interest in the App remain our exclusive property.",
+          "Any feedback, suggestions, or ideas you provide may be used by us without restriction or compensation. You may not assign or transfer this Agreement without our prior written consent. We may assign this Agreement at any time without notice."
+        ]
+      },
+      {
+        "title": "VI. DISCLAIMER REGARDING CALCULATIONS",
+        "paragraphs": [
+          "The App provides estimates of physical presence days in Canada based on information you enter. These calculations are for informational purposes only and do not constitute legal, tax, or immigration advice. Immigration requirements, rules, and thresholds may change without notice. Always consult a qualified immigration lawyer or regulated consultant for advice specific to your situation. We expressly disclaim any liability for decisions made based on the App's calculations."
+        ]
+      },
+      {
+        "title": "VII. PROHIBITED BEHAVIOUR",
+        "paragraphs": [
+          "You agree not to use the App in any way that:"
+        ],
+        "items": [
+          "is unlawful, illegal, or unauthorized;",
+          "is defamatory of any other person;",
+          "infringes any copyright, database right, or trademark;",
+          "advocates, promotes, or assists any unlawful act;",
+          "circumvents any security or technical measures."
+        ],
+        "closing": "You shall not make the App available to third parties, modify, translate, reverse engineer, decompile, disassemble, or create derivative works from the App. You shall not transfer, lend, rent, lease, or distribute the App, or use it to provide services to a third party."
+      },
+      {
+        "title": "VIII. AVAILABILITY, SECURITY, AND DATA RESPONSIBILITY",
+        "paragraphs": [
+          "The App is available for compatible mobile devices running Apple iOS 16.0 or later. We do not warrant compatibility with all hardware or software. We make no warranty that access will be uninterrupted, timely, or error-free. We may change, update, suspend, or discontinue the App without notice.",
+          "Because your trip data is stored exclusively on your device and is never transmitted to us:"
+        ],
+        "items": [
+          "You are solely responsible for backing up and securing that data.",
+          "We cannot access, restore, recover, or delete your data under any circumstances.",
+          "We are not liable for any loss of data resulting from device failure, loss, theft, app deletion, operating system updates, device replacement, or any other cause outside our control."
+        ]
+      },
+      {
+        "title": "IX. CHARGES",
+        "paragraphs": [
+          "The App is offered for a one-time purchase price, as displayed at the time of purchase in the applicable app store. All purchases are final. Refunds are governed by the app store's policies. We do not provide direct refunds except where required by law. You may also be charged by your communications service provider for downloading or accessing the App."
+        ]
+      },
+      {
+        "title": "X. DISCLAIMER OF WARRANTIES",
+        "paragraphs": [
+          "To the maximum extent permitted by applicable law, your use of the App is at your sole risk. The App and all content are provided \"as is\" and \"as available\". We disclaim all warranties, express or implied, including merchantability, fitness for a particular purpose, and non-infringement."
+        ]
+      },
+      {
+        "title": "XI. THIRD-PARTY WEBSITES AND RESOURCES",
+        "paragraphs": [
+          "The App may link to other websites. We have no control over and accept no responsibility for their content. Such links are provided for convenience only."
+        ]
+      },
+      {
+        "title": "XII. LIMITATION OF LIABILITY",
+        "paragraphs": [
+          "To the maximum extent permitted by applicable law, we shall not be liable for any damages, direct or indirect, arising out of or related to the App. We shall not be liable for any special, consequential, incidental, exemplary, or punitive damages, or loss of profit, even if advised of the possibility. Some jurisdictions do not allow the exclusion or limitation of certain damages, so the above may not apply to you to the extent prohibited by applicable law."
+        ]
+      },
+      {
+        "title": "XIII. LEGAL COMPLIANCE",
+        "paragraphs": [
+          "You represent and warrant that (i) you are not located in a country subject to a Canada or United States government embargo or designated as a \"terrorist supporting\" country, and (ii) you are not listed on any Canada or United States government list of prohibited or restricted parties."
+        ]
+      },
+      {
+        "title": "XIV. THIRD-PARTY BENEFICIARY",
+        "paragraphs": [
+          "You acknowledge that Apple and Apple's subsidiaries are third-party beneficiaries of this Agreement. Upon your acceptance, Apple has the right to enforce this Agreement as a third-party beneficiary."
+        ]
+      },
+      {
+        "title": "XV. GOVERNING LAW, LANGUAGE, AND CLAIMS",
+        "paragraphs": [
+          "This Agreement shall be governed by and construed in accordance with the laws of the Province of Ontario, Canada. Any claims shall be exclusively decided by the Superior Court of Justice in Ontario, Canada. Any claim or cause of action must be commenced within one (1) year after the event giving rise to the claim. You agree that any dispute shall be resolved individually, and you may not consolidate claims or proceed on a class or representative basis where prohibited by applicable law.",
+          "This Agreement is drafted in English. Any translation is provided for your convenience only. In the event of any inconsistency between the English version and a translation, the English version governs, except where applicable law requires otherwise."
+        ]
+      },
+      {
+        "title": "XVI. SEVERABILITY",
+        "paragraphs": [
+          "If any provision of this Agreement is illegal, invalid, or unenforceable, it shall be construed or deleted to the minimum extent necessary, and the remaining terms shall continue in full force."
+        ]
+      },
+      {
+        "title": "XVII. TERMINATION",
+        "paragraphs": [
+          "We may terminate this Agreement at any time at our sole discretion. Upon termination, your license terminates and you must cease all use of the App. Sections V, VI, X, XI, XII, XIII, XV, XVI, XVIII, and XIX shall survive any termination."
+        ]
+      },
+      {
+        "title": "XVIII. INDEMNIFICATION",
+        "paragraphs": [
+          "You agree to indemnify, defend, and hold harmless Application Development Canada and its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including reasonable legal fees) arising out of your use of the App, your violation of this Agreement, or your violation of any rights of a third party."
+        ]
+      },
+      {
+        "title": "XIX. FORCE MAJEURE",
+        "paragraphs": [
+          "We will not be liable for any failure or delay in performing our obligations where such failure results from circumstances beyond our reasonable control, including acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or shortages of transportation, facilities, fuel, energy, labor, or materials."
+        ]
+      },
+      {
+        "title": "XX. CONTACT INFORMATION",
+        "paragraphs": [
+          "If you have any questions about this Agreement or the App, contact us at:"
         ]
       }
     ]
