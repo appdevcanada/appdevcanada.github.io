@@ -36,16 +36,18 @@ app/
   [locale]/                  # all localized pages, wrapped by next-intl
     layout.tsx                # root layout, site-wide metadata, Organization JSON-LD
     page.tsx                  # home page
-    presencetracker_details/  # PresenceTracker app details (About + Privacy tabs)
-    presencetracker/privacy/  # standalone PresenceTracker privacy policy (App Store URL)
+    presencetracker_details/  # PresenceTracker app details (About + Privacy + Terms tabs)
+    presencetracker/privacy/  # standalone PresenceTracker privacy policy (App Store / Google Play URL)
+    presencetracker/terms/    # standalone PresenceTracker Terms of Use (iOS + Android; text in `terms.sections` in messages)
     privacy/                  # website privacy policy
     opengraph-image.tsx       # dynamic per-locale OG image
   presencetracker/get/       # device-aware smart redirect (see below), not locale-scoped
   robots.ts / sitemap.ts / manifest.ts
 components/                  # shared React components
-  SiteFooter.tsx             # shared site footer (copyright + Privacy Policy/Support links), used by home page and PresenceTracker details page
+  SiteFooter.tsx             # shared site footer (copyright + Privacy Policy/Support links), used by home page and PresenceTracker details page; `privacyHref` (default `/privacy`) lets the details page link the app's own policy, `extraLink` adds the Terms link
   PrivacyPolicyBody.tsx      # shared privacy-policy renderer (reads `privacy.sections` from messages), used by both the PresenceTracker Privacy tab and the standalone privacy page
-  PresenceTrackerTabs.tsx    # PresenceTracker details page: About tab (hero content, What's New, feature list, trust/pricing blocks) + Privacy tab
+  PresenceTrackerTabs.tsx    # PresenceTracker details page: About tab (hero content, What's New, feature list, trust/pricing blocks) + Privacy and Terms tabs
+  TermsOfUseBody.tsx         # shared Terms of Use renderer (reads `terms.sections` from messages), used by the Terms tab and the standalone terms page
 i18n/
   routing.ts                 # defineRouting (locales, default locale) — Edge-safe, used by middleware
   navigation.ts               # createNavigation exports (Link, redirect, useRouter, usePathname)
