@@ -11,7 +11,8 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'terms' });
-  const pageTitle = t('title');
+  const appName = (await getTranslations({ locale, namespace: 'apps.presencetracker' }))('name');
+  const pageTitle = `${appName}: ${t('title')}`;
   const description = t('description');
   const fullTitle = `${pageTitle} — ${SITE_NAME}`;
 

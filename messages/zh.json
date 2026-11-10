@@ -9,6 +9,7 @@
     "label": "我们的部分应用",
     "presencetracker": {
       "name": "Presence Tracker",
+      "seoTitle": "加拿大永久居民与入籍实际居住天数计算器",
       "category": "移民 · 效率",
       "desc": "Presence Tracker 帮助永久居民和入籍申请人跟踪加拿大的实际居住要求。记录您在海外的离境情况，应用程序将实时计算您在加拿大的天数。",
       "positioning": "大多数计算器只是数天数，Presence Tracker 统计的是 IRCC 真正为您计入的天数。",
